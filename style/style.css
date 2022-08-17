@@ -1,0 +1,660 @@
+@font-face {
+  font-family: neue Montreal;
+  src: url(download/font/neueMontreal-light.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  font-family: "Neue Montreal";
+  font-weight: normal;
+  font-style: normal;
+}
+* body {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+#heropage {
+  width: 100%;
+  height: 600px;
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(rgba(9, 25, 54, 0.8), rgba(9, 25, 54, 0.8)), url("/images/Background Img (Hero page).png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#heropage nav {
+  width: 100%;
+  height: 100px;
+  padding: 0;
+  margin: 0;
+}
+#heropage nav .container {
+  width: 100%;
+  height: 100px;
+  padding: 20px 20px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+#heropage nav .container .navbar-brand {
+  width: 10%;
+  height: 50px;
+}
+#heropage nav .container .navbar-brand .box {
+  width: 50%;
+  height: 50px;
+  background-image: url("/images/Logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0 auto;
+}
+#heropage nav .container .navbar-nav {
+  width: 30%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+#heropage nav .container .navbar-nav .navlink {
+  width: 100%;
+  font-size: 14px;
+}
+#heropage nav .container .navbar-nav .navlink a {
+  text-decoration: none;
+}
+#heropage nav .container .navbar-nav .navlink a .nav-item {
+  list-style: none;
+  display: inline-block;
+  width: 24%;
+  height: auto;
+  color: #ffffff;
+  padding: 15px;
+  margin: 0 auto;
+}
+#heropage nav .container .navbar-nav .navlink a:hover .nav-item {
+  color: #0C8CE9;
+}
+#heropage nav .container .nav-login {
+  width: 30%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+#heropage nav .container .nav-login button {
+  width: 100px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 14px;
+}
+#heropage nav .container .nav-login #signin-transparent {
+  background-color: transparent;
+  border: 0;
+}
+#heropage nav .container .nav-login #Itinerary-icon {
+  background-color: transparent;
+  border: 0;
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+#heropage nav .container .nav-login #Itinerary-icon i {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 13px;
+  left: 0;
+  margin-left: 10px;
+}
+#heropage nav .container .nav-login #Itinerary-icon p {
+  width: 60px;
+  height: auto;
+  margin: 13px auto;
+  font-size: 14px;
+}
+#heropage nav .container .nav-login #Itinerary-icon:hover {
+  font-weight: 700;
+  border: 1px solid #0C8CE9;
+}
+#heropage nav .container .nav-login #signin-transparent:hover {
+  font-weight: 700;
+  border: 1px solid #0C8CE9;
+}
+#heropage nav .container .nav-login #signout-blue {
+  background-color: #0C8CE9;
+}
+#heropage nav .container .nav-login #signout-blue:hover {
+  font-weight: 700;
+  border: 1px solid #0C8CE9;
+}
+#heropage .herotext {
+  width: 50%;
+  height: 150px;
+  padding: 0;
+  margin: auto;
+}
+#heropage h1 {
+  color: #ffffff;
+  font-size: 48px;
+  text-align: center;
+  margin-top: 80px;
+}
+#heropage h1 span {
+  color: #FFC107;
+}
+#heropage p {
+  width: 70%;
+  margin: auto;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+#heropage .search-box {
+  width: 100%;
+  height: 70px;
+  margin: 0;
+  padding: 0;
+}
+#heropage .search-box .search-bar {
+  width: 100%;
+  height: auto;
+  max-width: 450px;
+  margin: auto;
+  position: relative;
+}
+#heropage .search-box .search-bar i {
+  position: absolute;
+  top: 13px;
+  left: 10px;
+  width: 7%;
+  margin-left: 7px;
+  color: #4A4949;
+}
+#heropage .search-box .search-bar input {
+  width: 100%;
+  height: 40px;
+  background-color: #F9F7F7;
+  border-radius: 7px;
+  padding-left: 50px;
+  outline: none;
+  border: 0;
+}
+#heropage .search-box .search-bar button {
+  position: absolute;
+  width: 15%;
+  height: 30px;
+  top: 5px;
+  right: 15px;
+  background-color: #0C8CE9;
+  color: #ffffff;
+  border: 0;
+  border-radius: 3px;
+  font-size: 11px;
+}
+
+#second {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+#second .container {
+  padding: 50px;
+}
+#second .container h1 {
+  color: #404040;
+  font-weight: 700;
+  margin-bottom: 70px;
+}
+#second .container .countriescontainer {
+  width: 100%;
+  height: 420px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+#second .container .countriescontainer a {
+  width: 30%;
+  height: 400px;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+#second .container .countriescontainer a .countrybox1 {
+  width: 100%;
+  height: 380px;
+  padding: 0;
+  margin: 0;
+  background-color: #F3F3F3;
+  border-radius: 7px;
+}
+#second .container .countriescontainer a .countrybox1 .countryimage {
+  width: 100%;
+  height: 300px;
+  background-image: url("/images/Paris Img.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#second .container .countriescontainer a .countrybox1 h1 {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 20px 0 20px;
+  margin-bottom: 10px;
+  color: #000000;
+}
+#second .container .countriescontainer a .countrybox1 .review {
+  width: 100%;
+  height: 30px;
+  display: flex;
+}
+#second .container .countriescontainer a .countrybox1 .review .star {
+  width: 15px;
+  height: 15px;
+  background-image: url("/icons/Star Icon.png");
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  margin-left: 20px;
+}
+#second .container .countriescontainer a .countrybox1 .review h3 {
+  font-size: 14px;
+  color: #000000;
+  font-weight: 600;
+  margin-left: 5px;
+  font-weight: 400;
+}
+#second .container .countriescontainer a .countrybox2 {
+  width: 100%;
+  height: 380px;
+  padding: 0;
+  margin: 0;
+  background-color: #F3F3F3;
+  border-radius: 7px;
+}
+#second .container .countriescontainer a .countrybox2 .countryimage {
+  width: 100%;
+  height: 300px;
+  background-image: url("/images/Greece Img.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#second .container .countriescontainer a .countrybox2 h1 {
+  font-size: 20px;
+  padding: 10px 20px 0 20px;
+  margin-bottom: 10px;
+  color: #000000;
+  font-weight: 500;
+}
+#second .container .countriescontainer a .countrybox2 .review {
+  width: 100%;
+  height: 30px;
+  display: flex;
+}
+#second .container .countriescontainer a .countrybox2 .review .star {
+  width: 15px;
+  height: 15px;
+  background-image: url("/icons/Star Icon.png");
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  margin-left: 20px;
+}
+#second .container .countriescontainer a .countrybox2 .review h3 {
+  font-size: 14px;
+  color: #000000;
+  font-weight: 600;
+  margin-left: 5px;
+  font-weight: 400;
+}
+#second .container .countriescontainer a .countrybox3 {
+  width: 100%;
+  height: 380px;
+  padding: 0;
+  margin: 0;
+  background-color: #F3F3F3;
+  border-radius: 7px;
+}
+#second .container .countriescontainer a .countrybox3 .countryimage {
+  width: 100%;
+  height: 300px;
+  background-image: url("/images/Ionian island Img (New).png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#second .container .countriescontainer a .countrybox3 h1 {
+  font-size: 20px;
+  padding: 10px 20px 0 20px;
+  margin-bottom: 10px;
+  color: #000000;
+  font-weight: 500;
+}
+#second .container .countriescontainer a .countrybox3 .review {
+  width: 100%;
+  height: 30px;
+  display: flex;
+}
+#second .container .countriescontainer a .countrybox3 .review .star {
+  width: 15px;
+  height: 15px;
+  background-image: url("/icons/Star Icon.png");
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  margin-left: 20px;
+}
+#second .container .countriescontainer a .countrybox3 .review h3 {
+  font-size: 14px;
+  color: #000000;
+  font-weight: 600;
+  margin-left: 5px;
+  font-weight: 400;
+}
+#second .container .countriescontainer1 {
+  width: 100%;
+  height: 420px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+#second .container .countriescontainer1 a {
+  width: 30%;
+  height: 400px;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+#second .container .countriescontainer1 a .countrybox1 {
+  width: 100%;
+  height: 380px;
+  padding: 0;
+  margin: 0;
+  background-color: #F3F3F3;
+  border-radius: 7px;
+}
+#second .container .countriescontainer1 a .countrybox1 .countryimage {
+  width: 100%;
+  height: 300px;
+  background-image: url("/images/Switzerland Img.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+#second .container .countriescontainer1 a .countrybox1 h1 {
+  font-size: 20px;
+  padding: 10px 20px 0 20px;
+  margin-bottom: 10px;
+  color: #000000;
+  font-weight: 500;
+}
+#second .container .countriescontainer1 a .countrybox1 .review {
+  width: 100%;
+  height: 30px;
+  display: flex;
+}
+#second .container .countriescontainer1 a .countrybox1 .review .star {
+  width: 15px;
+  height: 15px;
+  background-image: url("/icons/Star Icon.png");
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  margin-left: 20px;
+}
+#second .container .countriescontainer1 a .countrybox1 .review h3 {
+  font-size: 14px;
+  color: #000000;
+  font-weight: 600;
+  margin-left: 5px;
+  font-weight: 400;
+}
+#second .container .countriescontainer1 a .countrybox2 {
+  width: 100%;
+  height: 380px;
+  padding: 0;
+  margin: 0;
+  background-color: #F3F3F3;
+  border-radius: 7px;
+}
+#second .container .countriescontainer1 a .countrybox2 .countryimage {
+  width: 100%;
+  height: 300px;
+  background-image: url("/images/Carribean Isalnd 1 Img(New).png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#second .container .countriescontainer1 a .countrybox2 h1 {
+  font-size: 20px;
+  padding: 10px 20px 0 20px;
+  margin-bottom: 10px;
+  color: #000000;
+  font-weight: 500;
+}
+#second .container .countriescontainer1 a .countrybox2 .review {
+  width: 100%;
+  height: 30px;
+  display: flex;
+}
+#second .container .countriescontainer1 a .countrybox2 .review .star {
+  width: 15px;
+  height: 15px;
+  background-image: url("/icons/Star Icon.png");
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  margin-left: 20px;
+}
+#second .container .countriescontainer1 a .countrybox2 .review h3 {
+  font-size: 14px;
+  color: #000000;
+  font-weight: 600;
+  margin-left: 5px;
+  font-weight: 500;
+}
+#second .container .countriescontainer1 a .countrybox3 {
+  width: 100%;
+  height: 380px;
+  padding: 0;
+  margin: 0;
+  background-color: #F3F3F3;
+  border-radius: 7px;
+}
+#second .container .countriescontainer1 a .countrybox3 .countryimage {
+  width: 100%;
+  height: 300px;
+  background-image: url("/images/Dubai Img.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#second .container .countriescontainer1 a .countrybox3 h1 {
+  font-size: 20px;
+  padding: 10px 20px 0 20px;
+  margin-bottom: 10px;
+  color: #000000;
+  font-weight: 500;
+}
+#second .container .countriescontainer1 a .countrybox3 .review {
+  width: 100%;
+  height: 30px;
+  display: flex;
+}
+#second .container .countriescontainer1 a .countrybox3 .review .star {
+  width: 15px;
+  height: 15px;
+  background-image: url("/icons/Star Icon.png");
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  margin-left: 20px;
+}
+#second .container .countriescontainer1 a .countrybox3 .review h3 {
+  font-size: 14px;
+  color: #000000;
+  font-weight: 600;
+  margin-left: 5px;
+  font-weight: 400;
+}
+
+#third {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+#third .container {
+  width: 100%;
+  height: 600px;
+  margin: 0;
+  padding: 50px;
+}
+#third .container h1 {
+  text-align: center;
+  font-size: 25px;
+  color: #404040;
+  margin-bottom: 60px;
+  font-weight: 700;
+}
+#third .container .sliderwrapper {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+#third .container .sliderwrapper .slides {
+  width: 30%;
+  height: 400px;
+  display: inline-block;
+  margin-right: 40px;
+  border-radius: 7px;
+  position: relative;
+  -webkit-animation-name: slideright;
+          animation-name: slideright;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+#third .container .sliderwrapper .slides:last-child {
+  border-radius: 10px;
+}
+@-webkit-keyframes slideright {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes slideright {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+#third .container .sliderwrapper .slides a {
+  text-decoration: none;
+  cursor: pointer;
+}
+#third .container .sliderwrapper .slides a .orange {
+  background-color: #FFC107;
+  width: 120px;
+  height: 40px;
+  position: absolute;
+  top: 300px;
+  left: 30px;
+  border: 0;
+  border-radius: 10px;
+}
+#third .container .sliderwrapper #img1 {
+  background-image: url("/images/Cribbean beach Img.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#third .container .sliderwrapper #img2 {
+  background-image: url("/images/Greece 2 Img.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#third .container .sliderwrapper #img3 {
+  background-image: url("/images/Los angeles Img.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#third .container .sliderwrapper #img4 {
+  background-image: url("/images/italy img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#third .container .sliderwrapper #img5 {
+  background-image: url("/images/Dubai night.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#third .container .sliderwrapper #img6 {
+  background-image: url("/images/Rome.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}/*# sourceMappingURL=style.css.map */
