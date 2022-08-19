@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  font-family: "Neue Montreal";
+  font-weight: normal;
+  font-style: normal;
+}
+* body {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 50%;
+  height: 300px;
+  margin: 150px auto;
+  padding: 0;
+}
+.container #icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #F0F0F0;
+  margin: auto;
+  position: relative;
+}
+.container #icon i {
+  position: absolute;
+  top: 19px;
+  left: 19px;
+  color: #008DD5;
+}
+.container h1 {
+  margin: 30px auto 0 auto;
+  width: 60%;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+.container p {
+  font-size: 14px;
+  margin: 15px auto 60px auto;
+  width: 60%;
+  text-align: center;
+}
+.container p a {
+  color: #7D7D7D;
+  font-weight: 500;
+}/*# sourceMappingURL=signup2.css.map */
