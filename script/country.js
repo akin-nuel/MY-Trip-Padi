@@ -53,7 +53,37 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+
+//this should be on the onclick button
+function addToCart(Country){
+    places.forEach( item=> {
+        if(item.country.name === country){
+
+        }
+    })
+}
 //adding to cart
+
+let places = [
+    {
+        country:{
+            
+            name:"Greece",
+            image:"https://im.ge/i/OnGGVT",
+            Location:"Athens Greece"
+            
+        },
+        quantity: 1
+    },
+
+    {
+        name:"France",
+        image:"https://im.ge/i/One2V6",
+        Location:"Paris france"
+    }
+]
+
+
 let carts = document.querySelectorAll(".addToCart");
 
 
