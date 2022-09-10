@@ -1,0 +1,300 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  font-family: "Neue Montreal";
+  font-weight: 500;
+  font-style: normal;
+}
+* body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+}
+
+#heropage {
+  width: 100%;
+  height: 830px;
+  margin: 0;
+  padding: 0;
+}
+#heropage nav {
+  width: 100%;
+  height: 70px;
+  background-color: #091936;
+  margin: 0;
+  padding: 0;
+}
+#heropage nav .container {
+  width: 100%;
+  height: 70px;
+  padding: 10px 20px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+#heropage nav .container .navbar-brand {
+  width: 10%;
+  height: 50px;
+}
+#heropage nav .container .navbar-brand .box {
+  width: 50%;
+  height: 50px;
+  background-image: url("/images/Logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 600px) {
+  #heropage nav .container .navbar-brand .box {
+    width: 80%;
+  }
+}
+#heropage nav .container .search-icon {
+  width: 45%;
+  height: auto;
+  min-width: 200px;
+  margin: auto;
+}
+#heropage nav .container .search-icon .search-bar {
+  width: 100%;
+  height: 50px;
+  position: relative;
+}
+#heropage nav .container .search-icon .search-bar input {
+  width: 100%;
+  height: 40px;
+  background-color: #F9F7F7;
+  border-radius: 7px;
+  padding: 20px;
+  outline: none;
+  border: 0;
+}
+#heropage nav .container .search-icon .search-bar button {
+  position: absolute;
+  width: 6%;
+  height: 30px;
+  top: 5px;
+  right: 15px;
+  background-color: #0C8CE9;
+  color: #ffffff;
+  border: 0;
+  border-radius: 3px;
+  font-size: 11px;
+}
+@media only screen and (max-width: 600px) {
+  #heropage nav .container .search-icon .search-bar button {
+    width: 10%;
+  }
+}
+#heropage nav .container .search-icon .search-bar button i {
+  position: absolute;
+  top: 9px;
+  right: 10px;
+  width: 40%;
+  height: auto;
+  margin-left: 7px;
+  color: #4A4949;
+}
+#heropage nav .container .login-cart {
+  width: 30%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 600px) {
+  #heropage nav .container .login-cart {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    background-color: #091936;
+    flex-direction: column;
+    width: 100%;
+    height: 170px;
+    padding: 10px;
+    text-align: center;
+    transition: 0.3s;
+  }
+  #heropage nav .container .login-cart.active {
+    left: 0;
+  }
+}
+#heropage nav .container .login-cart button {
+  width: 100px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 14px;
+}
+#heropage nav .container .login-cart #signin-transparent {
+  background-color: transparent;
+  border: 0;
+}
+#heropage nav .container .login-cart a {
+  text-decoration: none;
+}
+#heropage nav .container .login-cart a #Itinerary-icon {
+  background-color: transparent;
+  border: 0;
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+#heropage nav .container .login-cart a #Itinerary-icon i {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 13px;
+  left: 0;
+  margin-left: 10px;
+}
+@media only screen and (max-width: 600px) {
+  #heropage nav .container .login-cart a #Itinerary-icon i {
+    left: 185px;
+  }
+}
+#heropage nav .container .login-cart a #Itinerary-icon p {
+  width: 60px;
+  height: auto;
+  margin: 13px auto;
+  font-size: 14px;
+}
+#heropage nav .container .login-cart a #Itinerary-icon:hover {
+  font-weight: 700;
+  border: 1px solid #0C8CE9;
+}
+#heropage nav .container .login-cart #signin-transparent:hover {
+  font-weight: 700;
+  border: 1px solid #0C8CE9;
+}
+#heropage nav .container .login-cart #signout-blue {
+  background-color: #0C8CE9;
+}
+#heropage nav .container .login-cart #signout-blue:hover {
+  font-weight: 700;
+  border: 1px solid #0C8CE9;
+}
+#heropage nav .container .hamburger {
+  display: none;
+  cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+  #heropage nav .container .hamburger {
+    display: block;
+    width: 10%;
+    height: 50px;
+    cursor: pointer;
+  }
+  #heropage nav .container .hamburger .bar {
+    width: 70%;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px auto 7px auto;
+    transition: all 0.3s ease-in-out;
+  }
+  #heropage nav .container .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  #heropage nav .container .hamburger.active .bar:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+  #heropage nav .container .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+}
+
+.padding {
+  width: 90%;
+  height: auto;
+  margin: 50px auto;
+}
+.padding h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.padding .container {
+  border-top: 1px solid #000;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.padding .container #text_image {
+  width: 50%;
+  height: auto;
+  display: flex;
+  margin-top: 20px;
+}
+.padding .container #text_image .img {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #000;
+}
+.padding .container #text_image .text {
+  width: 300px;
+  height: 150px;
+  margin-left: 10px;
+}
+.padding .container #text_image .text h3 {
+  font-size: 16px;
+  margin: 15px auto;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+}
+.padding .container #text_image .text .icon-text {
+  width: 120px;
+  height: 30px;
+  display: flex;
+}
+.padding .container #text_image .text .icon-text i {
+  font-size: 9px;
+  width: 12px;
+  height: auto;
+}
+.padding .container #text_image .text .icon-text h6 {
+  font-size: 9px;
+}
+.padding .container #text_image .text button {
+  width: 30px;
+  height: 20px;
+  background-color: #FBD35B;
+  border: 0;
+  display: flex;
+}
+.padding .container #text_image .text button p {
+  font-size: 9px;
+  margin: auto auto;
+}
+.padding .container #text_image .text button i {
+  font-size: 8px;
+  margin: auto auto;
+}
+.padding .container #trash {
+  width: 80px;
+  height: 30px;
+  background-color: transparent;
+  border: 0;
+  margin-top: 70px;
+  display: flex;
+  color: #B8312B;
+}
+.padding .container #trash i {
+  width: 10px;
+  height: 20px;
+  justify-self: center;
+}
+.padding .container #trash p {
+  text-align: center;
+}/*# sourceMappingURL=itinerary.css.map */

@@ -29,6 +29,11 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media only screen and (max-width: 600px) {
+  #heropage {
+    height: 500px;
+  }
+}
 #heropage nav {
   width: 100%;
   height: 100px;
@@ -56,20 +61,51 @@
   background-size: contain;
   margin: 0 auto;
 }
+@media only screen and (max-width: 600px) {
+  #heropage nav .container .navbar-brand .box {
+    width: 80%;
+  }
+}
 #heropage nav .container .navbar-nav {
   width: 30%;
   height: auto;
   margin: 0;
   padding: 0;
 }
-#heropage nav .container .navbar-nav .navlink {
+@media only screen and (max-width: 600px) {
+  #heropage nav .container .navbar-nav {
+    width: 10%;
+    margin: left;
+  }
+}
+#heropage nav .container .navbar-nav .nav-menu {
   width: 100%;
   font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-#heropage nav .container .navbar-nav .navlink a {
-  text-decoration: none;
+@media only screen and (max-width: 600px) {
+  #heropage nav .container .navbar-nav .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    gap: 0;
+    background-color: #091936;
+    flex-direction: column;
+    width: 80%;
+    height: 100vh;
+    z-index: 999;
+    text-align: center;
+    transition: 0.3s;
+    justify-content: flex-start;
+  }
+  #heropage nav .container .navbar-nav .nav-menu.active {
+    left: 0;
+  }
 }
-#heropage nav .container .navbar-nav .navlink a .nav-item {
+#heropage nav .container .navbar-nav .nav-menu .nav-item {
+  transition: 0.7s ease;
   list-style: none;
   display: inline-block;
   width: 24%;
@@ -78,8 +114,74 @@
   padding: 15px;
   margin: 0 auto;
 }
-#heropage nav .container .navbar-nav .navlink a:hover .nav-item {
+@media only screen and (max-width: 600px) {
+  #heropage nav .container .navbar-nav .nav-menu .nav-item {
+    margin: 16px 0;
+  }
+}
+#heropage nav .container .navbar-nav .nav-menu .nav-item .nav-link {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.7s ease;
+}
+#heropage nav .container .navbar-nav .nav-menu .nav-item .nav-link:hover {
   color: #0C8CE9;
+}
+#heropage nav .container .navbar-nav .hamburger {
+  display: none;
+  cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+  #heropage nav .container .navbar-nav .hamburger {
+    display: block;
+    width: 80%;
+    height: 50px;
+    cursor: pointer;
+    /*.change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+
+    .bar2{
+        width: 70%;
+        height:3px;
+        background-color: #fff;
+        margin:0 auto 7px auto;
+    }
+
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    .bar3{
+        width: 70%;
+        height:3px;
+        background-color: #fff;
+        margin:0 auto 7px auto;
+
+    }
+
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+        transform: rotate(45deg) translate(-8px, -8px) ;
+    }*/
+  }
+  #heropage nav .container .navbar-nav .hamburger .bar {
+    width: 70%;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px auto 7px auto;
+    transition: all 0.3s ease-in-out;
+  }
+  #heropage nav .container .navbar-nav .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  #heropage nav .container .navbar-nav .hamburger.active .bar:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+  #heropage nav .container .navbar-nav .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
 }
 #heropage nav .container .nav-login {
   width: 30%;
@@ -88,6 +190,11 @@
   padding: 0;
   display: flex;
   justify-content: space-between;
+}
+@media only screen and (max-width: 600px) {
+  #heropage nav .container .nav-login {
+    display: none;
+  }
 }
 #heropage nav .container .nav-login button {
   width: 100px;
@@ -103,7 +210,10 @@
   background-color: transparent;
   border: 0;
 }
-#heropage nav .container .nav-login #Itinerary-icon {
+#heropage nav .container .nav-login a {
+  text-decoration: none;
+}
+#heropage nav .container .nav-login a #Itinerary-icon {
   background-color: transparent;
   border: 0;
   position: relative;
@@ -111,7 +221,7 @@
   width: 100%;
   height: auto;
 }
-#heropage nav .container .nav-login #Itinerary-icon i {
+#heropage nav .container .nav-login a #Itinerary-icon i {
   width: 20px;
   height: 20px;
   position: absolute;
@@ -119,13 +229,13 @@
   left: 0;
   margin-left: 10px;
 }
-#heropage nav .container .nav-login #Itinerary-icon p {
+#heropage nav .container .nav-login a #Itinerary-icon p {
   width: 60px;
   height: auto;
   margin: 13px auto;
   font-size: 14px;
 }
-#heropage nav .container .nav-login #Itinerary-icon:hover {
+#heropage nav .container .nav-login a #Itinerary-icon:hover {
   font-weight: 700;
   border: 1px solid #0C8CE9;
 }
@@ -146,6 +256,11 @@
   padding: 0;
   margin: auto;
 }
+@media only screen and (max-width: 600px) {
+  #heropage .herotext {
+    width: 90%;
+  }
+}
 #heropage h1 {
   color: #ffffff;
   font-size: 48px;
@@ -154,6 +269,12 @@
 }
 #heropage h1 span {
   color: #FFC107;
+}
+@media only screen and (max-width: 600px) {
+  #heropage h1 {
+    font-size: 30px;
+    margin-top: 60px;
+  }
 }
 #heropage p {
   width: 70%;
@@ -164,11 +285,24 @@
   margin-top: 40px;
   margin-bottom: 20px;
 }
+@media only screen and (max-width: 600px) {
+  #heropage p {
+    font-size: 14px;
+  }
+}
 #heropage .search-box {
   width: 100%;
   height: 70px;
   margin: 0;
   padding: 0;
+}
+@media only screen and (max-width: 600px) {
+  #heropage .search-box {
+    width: 80%;
+    margin: auto;
+    position: relative;
+    height: 100px;
+  }
 }
 #heropage .search-box .search-bar {
   width: 100%;
@@ -194,7 +328,7 @@
   outline: none;
   border: 0;
 }
-#heropage .search-box .search-bar button {
+#heropage .search-box .search-bar #button {
   position: absolute;
   width: 15%;
   height: 30px;
@@ -205,6 +339,21 @@
   border: 0;
   border-radius: 3px;
   font-size: 11px;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 7px;
+}
+@media only screen and (max-width: 600px) {
+  #heropage .search-box .search-bar #button {
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    width: 40%;
+    height: 40px;
+    margin-top: 40px;
+    text-align: center;
+    padding-top: 10px;
+  }
 }
 
 #second {
@@ -221,6 +370,11 @@
   font-weight: 700;
   margin-bottom: 70px;
 }
+@media only screen and (max-width: 600px) {
+  #second .container h1 {
+    text-align: center;
+  }
+}
 #second .container .countriescontainer {
   width: 100%;
   height: 420px;
@@ -230,12 +384,23 @@
   justify-content: space-between;
   margin-bottom: 10px;
 }
+@media only screen and (max-width: 600px) {
+  #second .container .countriescontainer {
+    display: block;
+    height: 1000px;
+  }
+}
 #second .container .countriescontainer a {
   width: 30%;
   height: 400px;
   margin: 0;
   padding: 0;
   text-decoration: none;
+}
+@media only screen and (max-width: 600px) {
+  #second .container .countriescontainer a {
+    width: 100%;
+  }
 }
 #second .container .countriescontainer a .countrybox1 {
   width: 100%;
@@ -244,6 +409,12 @@
   margin: 0;
   background-color: #F3F3F3;
   border-radius: 7px;
+}
+@media only screen and (max-width: 600px) {
+  #second .container .countriescontainer a .countrybox1 {
+    height: 300px;
+    margin-bottom: 20px;
+  }
 }
 #second .container .countriescontainer a .countrybox1 .countryimage {
   width: 100%;
@@ -257,12 +428,23 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media only screen and (max-width: 600px) {
+  #second .container .countriescontainer a .countrybox1 .countryimage {
+    height: 220px;
+  }
+}
 #second .container .countriescontainer a .countrybox1 h1 {
   font-size: 20px;
   font-weight: 500;
   padding: 10px 20px 0 20px;
   margin-bottom: 10px;
   color: #000000;
+}
+@media only screen and (max-width: 600px) {
+  #second .container .countriescontainer a .countrybox1 h1 {
+    text-align: left;
+    font-size: 17px;
+  }
 }
 #second .container .countriescontainer a .countrybox1 .review {
   width: 100%;
@@ -285,6 +467,11 @@
   margin-left: 5px;
   font-weight: 400;
 }
+@media only screen and (max-width: 600px) {
+  #second .container .countriescontainer a .countrybox1 .review h3 {
+    font-size: 12px;
+  }
+}
 #second .container .countriescontainer a .countrybox2 {
   width: 100%;
   height: 380px;
@@ -292,6 +479,12 @@
   margin: 0;
   background-color: #F3F3F3;
   border-radius: 7px;
+}
+@media only screen and (max-width: 600px) {
+  #second .container .countriescontainer a .countrybox2 {
+    height: 300px;
+    margin-bottom: 20px;
+  }
 }
 #second .container .countriescontainer a .countrybox2 .countryimage {
   width: 100%;
@@ -305,12 +498,23 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media only screen and (max-width: 600px) {
+  #second .container .countriescontainer a .countrybox2 .countryimage {
+    height: 220px;
+  }
+}
 #second .container .countriescontainer a .countrybox2 h1 {
   font-size: 20px;
   padding: 10px 20px 0 20px;
   margin-bottom: 10px;
   color: #000000;
   font-weight: 500;
+}
+@media only screen and (max-width: 600px) {
+  #second .container .countriescontainer a .countrybox2 h1 {
+    text-align: left;
+    font-size: 17px;
+  }
 }
 #second .container .countriescontainer a .countrybox2 .review {
   width: 100%;
@@ -333,6 +537,11 @@
   margin-left: 5px;
   font-weight: 400;
 }
+@media only screen and (max-width: 600px) {
+  #second .container .countriescontainer a .countrybox2 .review h3 {
+    font-size: 12px;
+  }
+}
 #second .container .countriescontainer a .countrybox3 {
   width: 100%;
   height: 380px;
@@ -340,6 +549,12 @@
   margin: 0;
   background-color: #F3F3F3;
   border-radius: 7px;
+}
+@media only screen and (max-width: 600px) {
+  #second .container .countriescontainer a .countrybox3 {
+    height: 300px;
+    margin-bottom: 20px;
+  }
 }
 #second .container .countriescontainer a .countrybox3 .countryimage {
   width: 100%;
@@ -353,12 +568,23 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media only screen and (max-width: 600px) {
+  #second .container .countriescontainer a .countrybox3 .countryimage {
+    height: 220px;
+  }
+}
 #second .container .countriescontainer a .countrybox3 h1 {
   font-size: 20px;
   padding: 10px 20px 0 20px;
   margin-bottom: 10px;
   color: #000000;
   font-weight: 500;
+}
+@media only screen and (max-width: 600px) {
+  #second .container .countriescontainer a .countrybox3 h1 {
+    text-align: left;
+    font-size: 17px;
+  }
 }
 #second .container .countriescontainer a .countrybox3 .review {
   width: 100%;
@@ -381,6 +607,11 @@
   margin-left: 5px;
   font-weight: 400;
 }
+@media only screen and (max-width: 600px) {
+  #second .container .countriescontainer a .countrybox3 .review h3 {
+    font-size: 12px;
+  }
+}
 #second .container .countriescontainer1 {
   width: 100%;
   height: 420px;
@@ -389,6 +620,11 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
+}
+@media only screen and (max-width: 600px) {
+  #second .container .countriescontainer1 {
+    display: none;
+  }
 }
 #second .container .countriescontainer1 a {
   width: 30%;
@@ -548,7 +784,7 @@
 }
 #third .container {
   width: 100%;
-  height: 600px;
+  height: 680px;
   margin: 0;
   padding: 50px;
 }
@@ -561,7 +797,7 @@
 }
 #third .container .sliderwrapper {
   width: 100%;
-  height: 400px;
+  height: 450px;
   position: relative;
   overflow-y: hidden;
   overflow-x: hidden;
@@ -582,6 +818,13 @@
           animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+}
+@media only screen and (max-width: 600px) {
+  #third .container .sliderwrapper .slides {
+    -webkit-animation: none;
+            animation: none;
+    width: 100%;
+  }
 }
 #third .container .sliderwrapper .slides:last-child {
   border-radius: 10px;
@@ -658,6 +901,27 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+#third .container .dotdiv {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  #third .container .dotdiv {
+    display: block;
+  }
+  #third .container .dotdiv .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  #third .container .dotdiv .dot .active, #third .container .dotdiv .dot .dot:hover {
+    background-color: #717171;
+  }
+}
 
 .main_blog {
   width: 100%;
@@ -675,9 +939,23 @@
   font-size: 20px;
   margin-bottom: 15px;
 }
+@media only screen and (max-width: 600px) {
+  .main_blog .blog_head h3 {
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+}
 .main_blog .blog_head h2 {
   font-size: 23px;
   font-weight: 700;
+}
+@media only screen and (max-width: 600px) {
+  .main_blog .blog_head h2 {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
 }
 .main_blog .bigblog {
   width: 90%;
@@ -686,12 +964,25 @@
   display: flex;
   justify-content: space-between;
 }
+@media only screen and (max-width: 600px) {
+  .main_blog .bigblog {
+    display: block;
+  }
+}
 .main_blog .bigblog .blog {
   width: 28%;
   height: 450px;
   margin: 20px 0;
   background-color: #F5F5F5;
   padding: 10px;
+}
+@media only screen and (max-width: 600px) {
+  .main_blog .bigblog .blog {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+    height: 380px;
+  }
 }
 .main_blog .bigblog .blog .img {
   width: 95%;
@@ -702,6 +993,11 @@
   background-size: cover;
   margin: 15px auto;
   border-radius: 10px;
+}
+@media only screen and (max-width: 600px) {
+  .main_blog .bigblog .blog .img {
+    height: 200px;
+  }
 }
 .main_blog .bigblog .blog #two {
   background-image: url("/images/Blog Img 1.png");
@@ -714,9 +1010,19 @@
   margin: 15px 0 0 0;
   font-weight: 500;
 }
+@media only screen and (max-width: 600px) {
+  .main_blog .bigblog .blog h2 {
+    font-size: 17px;
+  }
+}
 .main_blog .bigblog .blog p {
   font-size: 12px;
   margin: 10px 0;
+}
+@media only screen and (max-width: 600px) {
+  .main_blog .bigblog .blog p {
+    font-size: 10px;
+  }
 }
 
 .choose_us {
@@ -732,11 +1038,21 @@
   margin: auto;
   padding-top: 60px;
 }
+@media only screen and (max-width: 600px) {
+  .choose_us #lower {
+    height: auto;
+  }
+}
 .choose_us #lower h3 {
   text-align: center;
   font-size: 16px;
   color: #848C94;
   margin-bottom: 15px;
+}
+@media only screen and (max-width: 600px) {
+  .choose_us #lower h3 {
+    font-size: 12px;
+  }
 }
 .choose_us #lower h2 {
   text-align: center;
@@ -745,6 +1061,11 @@
   color: #ffffff;
   margin-bottom: 70px;
 }
+@media only screen and (max-width: 600px) {
+  .choose_us #lower h2 {
+    font-size: 17px;
+  }
+}
 .choose_us #lower .choose {
   width: 100%;
   height: auto;
@@ -752,11 +1073,23 @@
   justify-content: space-between;
   margin-top: 20px;
 }
+@media only screen and (max-width: 600px) {
+  .choose_us #lower .choose {
+    display: block;
+  }
+}
 .choose_us #lower .choose .card {
   width: 22%;
   height: 70px;
   padding: 10px;
   margin: 0;
+}
+@media only screen and (max-width: 600px) {
+  .choose_us #lower .choose .card {
+    width: 90%;
+    margin: auto;
+    height: 200px;
+  }
 }
 .choose_us #lower .choose .card #map {
   width: 40px;
@@ -815,6 +1148,12 @@
   margin-top: 20px;
   margin-bottom: 15px;
 }
+@media only screen and (max-width: 600px) {
+  .choose_us #lower .choose .card h2 {
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
 .choose_us #lower .choose .card p {
   font-size: 12px;
   color: #fff;
@@ -823,6 +1162,13 @@
   width: 140px;
   margin: auto;
   font-weight: 300;
+}
+@media only screen and (max-width: 600px) {
+  .choose_us #lower .choose .card p {
+    font-size: 14px;
+    width: 55%;
+    margin: auto;
+  }
 }
 .choose_us #lower .choose .card #weather {
   width: 40px;
@@ -848,13 +1194,23 @@
   padding: 0;
   background-color: #091936;
 }
+@media only screen and (max-width: 600px) {
+  .choose_us footer {
+    height: auto;
+  }
+}
 .choose_us footer .container {
   width: 85%;
   height: auto;
   margin: auto;
   padding: 0;
   display: grid;
-  grid-template-columns: 3fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr 3fr;
+}
+@media only screen and (max-width: 600px) {
+  .choose_us footer .container {
+    display: block;
+  }
 }
 .choose_us footer .container .brand-number {
   color: #fff;
@@ -864,11 +1220,25 @@
   font-size: 18px;
   margin-bottom: 10px;
 }
+@media only screen and (max-width: 600px) {
+  .choose_us footer .container .brand-number h1 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: 30px;
+  }
+}
 .choose_us footer .container .brand-number .icon-number {
   width: 40%;
   height: auto;
   display: flex;
   justify-content: space-between;
+}
+@media only screen and (max-width: 600px) {
+  .choose_us footer .container .brand-number .icon-number {
+    margin: auto;
+    width: 80%;
+  }
 }
 .choose_us footer .container .brand-number .icon-number i {
   width: 7%;
@@ -878,19 +1248,41 @@
   font-size: 10px;
   width: 90%;
 }
-.choose_us footer .container .destination {
+@media only screen and (max-width: 600px) {
+  .choose_us footer .container .brand-number .icon-number p {
+    font-size: 14px;
+  }
+}
+.choose_us footer .container .flex {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  position: relative;
+}
+@media only screen and (max-width: 600px) {
+  .choose_us footer .container .flex {
+    padding: 30px;
+    justify-content: space-between;
+  }
+}
+.choose_us footer .container .flex .destination {
   color: #fff;
   margin-top: 100px;
 }
-.choose_us footer .container .destination h6 {
+@media only screen and (max-width: 600px) {
+  .choose_us footer .container .flex .destination {
+    margin-top: 0;
+  }
+}
+.choose_us footer .container .flex .destination h6 {
   font-size: 13px;
   margin-bottom: 15px;
 }
-.choose_us footer .container .destination ul {
+.choose_us footer .container .flex .destination ul {
   list-style-type: none;
   color: #fff;
 }
-.choose_us footer .container .destination ul li {
+.choose_us footer .container .flex .destination ul li {
   display: inline-block;
   width: 100%;
   height: 25px;
@@ -898,19 +1290,24 @@
   font-size: 13px;
   font-weight: 200;
 }
-.choose_us footer .container .links {
+.choose_us footer .container .flex .links {
   color: #fff;
   margin-top: 100px;
 }
-.choose_us footer .container .links h6 {
+@media only screen and (max-width: 600px) {
+  .choose_us footer .container .flex .links {
+    margin-top: 0;
+  }
+}
+.choose_us footer .container .flex .links h6 {
   font-size: 13px;
   margin-bottom: 15px;
 }
-.choose_us footer .container .links ul {
+.choose_us footer .container .flex .links ul {
   list-style-type: none;
   color: #fff;
 }
-.choose_us footer .container .links ul li {
+.choose_us footer .container .flex .links ul li {
   display: inline-block;
   width: 100%;
   height: 25px;
@@ -918,15 +1315,31 @@
   font-size: 13px;
   font-weight: 200;
 }
-.choose_us footer .container .social {
+.choose_us footer .container .flex .social {
   color: #fff;
   margin-top: 100px;
 }
-.choose_us footer .container .social h6 {
+@media only screen and (max-width: 600px) {
+  .choose_us footer .container .flex .social {
+    position: absolute;
+    color: #fff;
+    top: 120px;
+    left: 220px;
+    margin: 0;
+    width: 50%;
+  }
+}
+.choose_us footer .container .flex .social h6 {
   font-size: 13px;
   margin-bottom: 15px;
 }
-.choose_us footer .container .social .icon-text {
+@media only screen and (max-width: 600px) {
+  .choose_us footer .container .flex .social h6 {
+    display: none;
+    margin: 0;
+  }
+}
+.choose_us footer .container .flex .social .icon-text {
   width: 90%;
   height: auto;
   margin: 0;
@@ -934,11 +1347,27 @@
   display: flex;
   justify-content: space-between;
 }
-.choose_us footer .container .social .icon-text i {
+@media only screen and (max-width: 600px) {
+  .choose_us footer .container .flex .social .icon-text {
+    width: 50%;
+  }
+}
+.choose_us footer .container .flex .social .icon-text i {
   width: 10%;
   margin-left: 10px;
 }
-.choose_us footer .container .social .icon-text p {
+@media only screen and (max-width: 600px) {
+  .choose_us footer .container .flex .social .icon-text i {
+    width: 6%;
+  }
+}
+.choose_us footer .container .flex .social .icon-text p {
   font-size: 10px;
   width: 80%;
+}
+@media only screen and (max-width: 600px) {
+  .choose_us footer .container .flex .social .icon-text p {
+    font-size: 13px;
+    font-weight: 200;
+  }
 }/*# sourceMappingURL=style.css.map */

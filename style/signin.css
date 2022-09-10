@@ -36,6 +36,17 @@
   width: 50px;
   height: 50px;
 }
+@media only screen and (max-width: 600px) {
+  #login-form #cancel a button {
+    background-color: #000;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+  }
+  #login-form #cancel a button i {
+    color: #fff;
+  }
+}
 #login-form h1 {
   font-size: 32px;
   text-align: center;
@@ -44,8 +55,18 @@
   font-weight: 700;
   color: #1e1e1e;
 }
+@media only screen and (max-width: 600px) {
+  #login-form h1 {
+    font-size: 20px;
+  }
+}
 #login-form hr {
   color: #D9D9D9;
+}
+@media only screen and (max-width: 600px) {
+  #login-form hr {
+    display: none;
+  }
 }
 #login-form #container {
   width: 60%;
@@ -53,10 +74,21 @@
   height: auto;
   padding: 0;
 }
+@media only screen and (max-width: 600px) {
+  #login-form #container {
+    width: 85%;
+  }
+}
 #login-form #container #float-right {
   font-size: 40px;
   text-align: left;
   margin-bottom: 30px;
+}
+@media only screen and (max-width: 600px) {
+  #login-form #container #float-right {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
 }
 #login-form #container #form {
   width: 100%;
@@ -65,6 +97,12 @@
 #login-form #container #form .form-name {
   font-size: 15px;
   padding-bottom: 20px;
+}
+@media only screen and (max-width: 600px) {
+  #login-form #container #form .form-name {
+    font-size: 13px;
+    padding-bottom: 10px;
+  }
 }
 #login-form #container #form input {
   margin: 20px 0;
@@ -75,16 +113,28 @@
   padding: 20px;
   border: 1px solid #B0B0B0;
 }
+@media only screen and (max-width: 600px) {
+  #login-form #container #form input {
+    height: 50px;
+    margin: 10px 0;
+  }
+}
 #login-form #container #form #password-icon {
   position: relative;
 }
 #login-form #container #form #password-icon i {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   position: absolute;
   top: 70px;
   left: 680px;
   color: #B0B0B0;
+}
+@media only screen and (max-width: 600px) {
+  #login-form #container #form #password-icon i {
+    left: 400px;
+    top: 45px;
+  }
 }
 #login-form #container #form a {
   text-decoration: none;
@@ -93,6 +143,12 @@
 #login-form #container #form a p {
   font-size: 13px;
   font-weight: 500;
+  margin-bottom: 30px;
+}
+@media only screen and (max-width: 600px) {
+  #login-form #container #form a p {
+    margin-bottom: 40px;
+  }
 }
 #login-form #container #form .button {
   width: 100%;
@@ -110,6 +166,11 @@
   border-radius: 7px;
   position: relative;
 }
+@media only screen and (max-width: 600px) {
+  #login-form #container #form .button a button {
+    height: 60px;
+  }
+}
 #login-form #container #form .button a button span {
   width: 30px;
   height: 30px;
@@ -126,12 +187,25 @@
   position: absolute;
   width: 30px;
   height: 30px;
-  top: 30px;
+  top: 25px;
   left: 20px;
   color: #0C8CE9;
+  font-size: 20px;
+}
+@media only screen and (max-width: 600px) {
+  #login-form #container #form .button a button i {
+    top: 20px;
+  }
 }
 #login-form #container #form .button a button i:hover {
   color: #ffffff;
+}
+#login-form #container #form .button a #signin {
+  background-color: #0C8CE9;
+  color: #fff;
+}
+#login-form #container #form .button a #signin:hover {
+  font-weight: 500;
 }
 
 .end {
@@ -139,6 +213,11 @@
   height: 40px;
   margin: 70px auto;
   padding: 0;
+}
+@media only screen and (max-width: 600px) {
+  .end {
+    margin: 30px auto;
+  }
 }
 .end a {
   font-size: 14px;

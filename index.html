@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Trippadi</title>
+    <link rel="icon" href="/images/Logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300&display=swap');
@@ -20,16 +21,25 @@
                         
                     </div>
                 </div>
+                
                 <div class="navbar-nav">
-                    <ul class="navlink">
-                        <a href="index.html"><li class="nav-item">Home</li></a>
-                        <a href="#"><li class="nav-item">Blog</li></a>
-                        <a href="#"><li class="nav-item">About us</li></a>
+                    <ul class="nav-menu">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
                     </ul>
+
+                    <div class="hamburger" onclick="myFunction(this)">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
                 </div>
 
+                
+
                 <div class="nav-login">
-                    <a href="#"><button id="Itinerary-icon"><i class="fa-solid fa-bag-shopping"></i><p>Itinerary</p></button></a>
+                    <a href="Itinerary.html"><button id="Itinerary-icon"><i class="fa-solid fa-bag-shopping"></i><p>Itinerary</p></button></a>
                     <a href="signin.html"><button id="signin-transparent">Sign in</button></a>
                     <a href="Signup1.html"><button id="signout-blue">Sign Up</button></a>
                 </div>
@@ -44,11 +54,11 @@
 
             <div class="search-box">
                 <div class="search-icon">
-                    <form action="" class="search-bar">
+                    <form class="search-bar">
                         <i class="fa-solid fa-magnifying-glass"></i>
                 
                         <input type="text" class="input" placeholder="Where would you like to go?" name="SearchCountry">
-                        <button type="submit">Search</button>
+                        <a href="comingsoon.html" id="button">Search</a>
                     </form>
             </div>
         </div>
@@ -91,7 +101,7 @@
                     
                 </a>
 
-                <a href="Lonian.html">
+                <a href="Ionian.html">
                     <div class="countrybox3">
                         
                         <div class="countryimage">
@@ -165,11 +175,12 @@
     <section id="third">
         <div class="container">
             <h1>Best Recommended Outdoor spots</h1>
+
             <div class="sliderwrapper">
-                <div class="slides" id="img1">
+                <div class="slides first" id="img1">
                     <a href="#">
                         <button class="orange">Carribean Beach</button>
-                    </a>
+                   </a>
                 </div>
                 <div class="slides" id="img2">
                     <a href="#">
@@ -196,6 +207,12 @@
                         <button class="orange">Rome</button>
                     </a>
                 </div>
+            </div>
+
+            <div class ="dotdiv" style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
             </div>
         </div>
     </section>
@@ -282,35 +299,39 @@
                     
                 </div>
     
-                <div class="destination">
-                    <h6>Top Destination</h6>
+                <div class="flex">
+                    <div class="destination">
+                        <h6>Top Destination</h6>
+        
+                        <ul>
+                            <a href="#"><li>Miami</li></a>
+                            <a href="#"><li>London</li></a>
+                            <a href="#"><li>Dubai</li></a>
+                            <a href="#"><li>Zanziba</li></a>
+                        </ul>
+                    </div>
+        
+                    <div class="links">
+        
+                        <h6>Useful links</h6>
+                        <ul>
+                            <li>About us</li>
+                            <li>Blog</li>
+                        </ul>
+                    </div>
     
-                    <ul>
-                        <a href="#"><li>Miami</li></a>
-                        <a href="#"><li>London</li></a>
-                        <a href="#"><li>Dubai</li></a>
-                        <a href="#"><li>Zanziba</li></a>
-                    </ul>
-                </div>
-    
-                <div class="links">
-    
-                    <h6>Useful links</h6>
-                    <ul>
-                        <li>About us</li>
-                        <li>Blog</li>
-                    </ul>
-                </div>
-    
-                <div class="social">
-                    <h6>Socials</h6>
-                    <div class="icon-text">
-                        <i class="fa-brands fa-instagram"></i>
-                        <p>My Trippadi</p>
+                    <div class="social">
+                        <h6>Socials</h6>
+                        <div class="icon-text">
+                            <i class="fa-brands fa-instagram"></i>
+                            <p>My Trippadi</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </footer>
     </section>
+
+    <script src="/script/script.js"></script>
 </body>
 </html>

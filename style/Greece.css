@@ -21,6 +21,11 @@
   margin: 0;
   padding: 0;
 }
+@media only screen and (max-width: 600px) {
+  .heropage {
+    height: 750px;
+  }
+}
 .heropage nav {
   width: 100%;
   height: 70px;
@@ -49,11 +54,21 @@
   background-size: contain;
   margin: 0 auto;
 }
+@media only screen and (max-width: 600px) {
+  .heropage nav .container .navbar-brand .box {
+    width: 80%;
+  }
+}
 .heropage nav .container .search-icon {
   width: 45%;
   height: auto;
   min-width: 200px;
   margin: auto;
+}
+@media only screen and (max-width: 600px) {
+  .heropage nav .container .search-icon {
+    display: none;
+  }
 }
 .heropage nav .container .search-icon .search-bar {
   width: 100%;
@@ -91,10 +106,31 @@
   color: #4A4949;
 }
 .heropage nav .container .login-cart {
-  width: 35%;
-  height: 50px;
+  width: 30%;
+  height: auto;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 600px) {
+  .heropage nav .container .login-cart {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    gap: 0;
+    background-color: #091936;
+    flex-direction: column;
+    width: 80%;
+    height: 100vh;
+    z-index: 999;
+    text-align: center;
+    transition: 0.3s;
+    justify-content: flex-start;
+  }
+  .heropage nav .container .login-cart.active {
+    left: 0;
+  }
 }
 .heropage nav .container .login-cart button {
   width: 100px;
@@ -104,31 +140,83 @@
   border: 0;
   border-radius: 5px;
   color: #ffffff;
+  font-size: 14px;
+}
+.heropage nav .container .login-cart #signin-transparent {
   background-color: transparent;
-}
-.heropage nav .container .login-cart button span {
-  width: 20px;
-  height: 20px;
-  margin: 0;
-  padding: 0;
-  background-image: url("/icons/Itineary icon.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.heropage nav .container .login-cart button:hover {
-  font-weight: 700;
-  border: 1px solid #0C8CE9;
-}
-.heropage nav .container .login-cart .signin-transparent {
   border: 0;
 }
-.heropage nav .container .login-cart .signout-blue {
-  background-color: #0C8CE9;
+.heropage nav .container .login-cart a {
+  text-decoration: none;
 }
-.heropage nav .container .login-cart .signout-blue:hover {
+.heropage nav .container .login-cart a #Itinerary-icon {
+  background-color: transparent;
+  border: 0;
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+.heropage nav .container .login-cart a #Itinerary-icon i {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 13px;
+  left: 0;
+}
+@media only screen and (max-width: 600px) {
+  .heropage nav .container .login-cart a #Itinerary-icon i {
+    left: 185px;
+  }
+}
+.heropage nav .container .login-cart a #Itinerary-icon p {
+  width: 60px;
+  height: auto;
+  margin: 13px auto;
+  font-size: 14px;
+}
+.heropage nav .container .login-cart a #Itinerary-icon:hover {
   font-weight: 700;
   border: 1px solid #0C8CE9;
+}
+.heropage nav .container .login-cart #signin-transparent:hover {
+  font-weight: 700;
+  border: 1px solid #0C8CE9;
+}
+.heropage nav .container .login-cart #signout-blue {
+  background-color: #0C8CE9;
+}
+.heropage nav .container .login-cart #signout-blue:hover {
+  font-weight: 700;
+  border: 1px solid #0C8CE9;
+}
+.heropage nav .container .hamburger {
+  display: none;
+  cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+  .heropage nav .container .hamburger {
+    display: block;
+    width: 10%;
+    height: 50px;
+    cursor: pointer;
+  }
+  .heropage nav .container .hamburger .bar {
+    width: 70%;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px auto 7px auto;
+    transition: all 0.3s ease-in-out;
+  }
+  .heropage nav .container .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .heropage nav .container .hamburger.active .bar:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+  .heropage nav .container .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
 }
 .heropage .list-container {
   width: 85%;
@@ -136,22 +224,39 @@
   padding: 0;
   margin: 50px auto;
 }
+@media only screen and (max-width: 600px) {
+  .heropage .list-container {
+    display: 90%;
+    margin: 50px auto;
+  }
+}
 .heropage .list-container ul {
-  width: 60%;
+  width: 70%;
   text-decoration: none;
 }
-.heropage .list-container ul a {
-  font-weight: 400;
-  list-style-type: none;
+@media only screen and (max-width: 600px) {
+  .heropage .list-container ul {
+    width: 80%;
+  }
 }
-.heropage .list-container ul a li {
+.heropage .list-container ul li {
   display: inline-block;
-  width: 24%;
+  width: 23%;
   display: 20px;
   color: black;
 }
-.heropage .list-container ul a:hover {
-  font-weight: 600;
+@media only screen and (max-width: 600px) {
+  .heropage .list-container ul li {
+    font-size: 12px;
+  }
+}
+.heropage .list-container ul li a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #000;
+}
+.heropage .list-container ul li :hover {
+  font-weight: 900;
   color: #1a1818;
 }
 .heropage .text-button-container {
@@ -167,11 +272,21 @@
   font-size: 35px;
   font-weight: 600;
 }
+@media only screen and (max-width: 600px) {
+  .heropage .text-button-container h1 {
+    font-size: 25px;
+  }
+}
 .heropage .text-button-container .button {
   width: 15%;
   height: auto;
   margin: 0;
   padding: 0;
+}
+@media only screen and (max-width: 600px) {
+  .heropage .text-button-container .button {
+    width: 22%;
+  }
 }
 .heropage .text-button-container .button button {
   width: 100%;
@@ -188,10 +303,20 @@
   margin: 17px 0px 17px 15px;
   color: red;
 }
+@media only screen and (max-width: 600px) {
+  .heropage .text-button-container .button button i {
+    margin: 17px 0 17px 8px;
+  }
+}
 .heropage .text-button-container .button button p {
   width: 80%;
   height: auto;
   margin: auto 0;
+}
+@media only screen and (max-width: 600px) {
+  .heropage .text-button-container .button button p {
+    font-size: 10px;
+  }
 }
 .heropage .imagescontainer {
   width: 85%;
@@ -204,6 +329,11 @@
   position: relative;
   margin-bottom: 20px;
 }
+@media only screen and (max-width: 600px) {
+  .heropage .imagescontainer {
+    display: block;
+  }
+}
 .heropage .img1 {
   background-image: url("/images/Greece 2 Img.png");
   background-repeat: no-repeat;
@@ -214,6 +344,35 @@
   -o-object-fit: fill;
      object-fit: fill;
   border-radius: 7px;
+}
+@media only screen and (max-width: 600px) {
+  .heropage .img1 {
+    height: 450px;
+    -webkit-animation: slider 20s infinite ease-in-out;
+            animation: slider 20s infinite ease-in-out;
+  }
+  @-webkit-keyframes slider {
+    0% {
+      background-image: url("/images/Greece 2 Img.png");
+    }
+    40% {
+      background-image: url("/images/Greece Img.png");
+    }
+    80% {
+      background-image: url("/images/Greece 5.jpg");
+    }
+  }
+  @keyframes slider {
+    0% {
+      background-image: url("/images/Greece 2 Img.png");
+    }
+    40% {
+      background-image: url("/images/Greece Img.png");
+    }
+    80% {
+      background-image: url("/images/Greece 5.jpg");
+    }
+  }
 }
 .heropage .img2 {
   background-image: url("/images/Greece Img.png");
@@ -227,6 +386,11 @@
   margin-bottom: 1em;
   border-radius: 7px;
 }
+@media only screen and (max-width: 600px) {
+  .heropage .img2 {
+    display: none;
+  }
+}
 .heropage .img3 {
   background-image: url("/images/Greece 2 Img.png");
   background-repeat: no-repeat;
@@ -238,6 +402,11 @@
      object-fit: fill;
   border-radius: 7px;
 }
+@media only screen and (max-width: 600px) {
+  .heropage .img3 {
+    display: none;
+  }
+}
 .heropage #show-more {
   width: 150px;
   height: 50px;
@@ -245,6 +414,11 @@
   top: 430px;
   left: 800px;
   cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+  .heropage #show-more {
+    display: none;
+  }
 }
 .heropage #show-more button {
   width: 150px;
@@ -272,11 +446,22 @@
   margin-bottom: 20px;
   font-weight: 700;
 }
+@media only screen and (max-width: 600px) {
+  .second .text-container h3 {
+    font-size: 12px;
+  }
+}
 .second .text-container p {
   font-size: 14px;
   color: #000;
   line-height: 20px;
   margin-bottom: 20px;
+}
+@media only screen and (max-width: 600px) {
+  .second .text-container p {
+    font-size: 10px;
+    line-height: 15px;
+  }
 }
 
 .third {
@@ -291,35 +476,62 @@
   margin: auto;
   padding: 0;
 }
+@media only screen and (max-width: 600px) {
+  .third .container {
+    margin-top: 20px;
+  }
+}
 .third .container h3 {
   width: 30%;
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 30px;
 }
+@media only screen and (max-width: 600px) {
+  .third .container h3 {
+    font-size: 14px;
+    width: 50%;
+  }
+}
 .third .container .sliderwrapper {
   width: 100%;
   height: 400px;
   position: relative;
   overflow-y: hidden;
-  overflow-x: scroll;
-  white-space: nowrap;
+  overflow-x: hidden;
 }
-.third .container .sliderwrapper .slides {
+.third .container .sliderwrapper ul {
+  width: 100%;
+  height: 400px;
+  white-space: nowrap;
+  position: relative;
+  display: inline-block;
+}
+.third .container .sliderwrapper ul li {
   width: 30%;
   height: 400px;
   display: inline-block;
   margin-right: 40px;
   position: relative;
 }
-.third .container .sliderwrapper .slides:last-child {
-  border-radius: 10px;
+@media only screen and (max-width: 600px) {
+  .third .container .sliderwrapper ul li {
+    width: 100%;
+  }
 }
-.third .container .sliderwrapper .slides a {
+.third .container .sliderwrapper ul li .slides {
+  width: 100%;
+  height: 400px;
+}
+@media only screen and (max-width: 600px) {
+  .third .container .sliderwrapper ul li .slides {
+    width: 100%;
+  }
+}
+.third .container .sliderwrapper ul li .slides a {
   text-decoration: none;
-  cursor: pointer;
 }
-.third .container .sliderwrapper .slides a .orange {
+.third .container .sliderwrapper ul li .slides a .orange {
   background-color: #FBD35B;
   width: 120px;
   height: 40px;
@@ -329,41 +541,68 @@
   border: 0;
   border-radius: 10px;
 }
-.third .container .sliderwrapper #img1 {
+.third .container .sliderwrapper ul li #img1 {
   background-image: url("/images/Greece 3.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.third .container .sliderwrapper #img2 {
+.third .container .sliderwrapper ul li #img2 {
   background-image: url("/images/Greece 4.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.third .container .sliderwrapper #img3 {
+.third .container .sliderwrapper ul li #img3 {
   background-image: url("/images/Greece 5.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.third .container .sliderwrapper #img4 {
+.third .container .sliderwrapper ul li #img4 {
   background-image: url("/images/Greece 6.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.third .container .sliderwrapper #img5 {
+.third .container .sliderwrapper ul li #img5 {
   background-image: url("/images/Greece 2 Img.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.third .container .sliderwrapper #img6 {
+.third .container .sliderwrapper ul li #img6 {
   background-image: url("/images/Greece Img.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.third .container #arrow {
+  width: 10%;
+  height: 50px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.third .container #arrow .slide-right {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #000;
+}
+.third .container #arrow .slide-right i {
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+}
+.third .container #arrow .slide-left {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #000;
+}
+.third .container #arrow .slide-left i {
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
 }
 
 .fourth {
@@ -371,6 +610,11 @@
   height: 700px;
   margin: 0;
   padding: 0;
+}
+@media only screen and (max-width: 600px) {
+  .fourth {
+    height: 800px;
+  }
 }
 .fourth .container {
   width: 85%;
@@ -384,6 +628,14 @@
   font-weight: 600;
   margin-bottom: 30px;
 }
+@media only screen and (max-width: 600px) {
+  .fourth .container h3 {
+    width: 50%;
+    margin: 20px auto;
+    font-size: 14px;
+    text-align: center;
+  }
+}
 .fourth .container .grid-container {
   width: 100%;
   height: auto;
@@ -394,11 +646,21 @@
   grid-gap: 1em;
   margin-bottom: 30px;
 }
+@media only screen and (max-width: 600px) {
+  .fourth .container .grid-container {
+    display: block;
+  }
+}
 .fourth .container .grid-container .textbox {
   width: 100%;
   height: auto;
   box-shadow: 1px 1px 20px 0.5px #ddd;
   padding: 30px;
+}
+@media only screen and (max-width: 600px) {
+  .fourth .container .grid-container .textbox {
+    margin-bottom: 30px;
+  }
 }
 .fourth .container .grid-container .textbox .img-textbox {
   width: 50%;
@@ -443,6 +705,17 @@
   font-size: 11px;
   line-height: 18px;
 }
+@media only screen and (max-width: 600px) {
+  .fourth .container .grid-container .textbox p {
+    font-size: 9px;
+    line-height: 13px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .fourth .container .grid-container #noshow {
+    display: none;
+  }
+}
 .fourth .container .button-link-container {
   width: 100%;
   height: 70px;
@@ -450,6 +723,11 @@
   margin: 0;
   padding: 0;
   justify-content: space-between;
+}
+@media only screen and (max-width: 600px) {
+  .fourth .container .button-link-container {
+    display: block;
+  }
 }
 .fourth .container .button-link-container button {
   width: 100%;
@@ -460,9 +738,22 @@
   color: #fff;
   border-radius: 7px;
 }
+@media only screen and (max-width: 600px) {
+  .fourth .container .button-link-container button {
+    display: none;
+  }
+}
 .fourth .container .button-link-container a {
   width: 12%;
   margin: auto 0;
+}
+@media only screen and (max-width: 600px) {
+  .fourth .container .button-link-container a {
+    display: block;
+    margin: auto;
+    width: 30%;
+    font-size: 14px;
+  }
 }
 
 footer {
@@ -472,13 +763,23 @@ footer {
   padding: 0;
   background-color: #091936;
 }
+@media only screen and (max-width: 600px) {
+  footer {
+    height: auto;
+  }
+}
 footer .container {
   width: 85%;
   height: auto;
   margin: auto;
   padding: 0;
   display: grid;
-  grid-template-columns: 3fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr 3fr;
+}
+@media only screen and (max-width: 600px) {
+  footer .container {
+    display: block;
+  }
 }
 footer .container .brand-number {
   color: #fff;
@@ -488,11 +789,25 @@ footer .container .brand-number h1 {
   font-size: 18px;
   margin-bottom: 10px;
 }
+@media only screen and (max-width: 600px) {
+  footer .container .brand-number h1 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: 30px;
+  }
+}
 footer .container .brand-number .icon-number {
-  width: 40%;
+  width: 60%;
   height: auto;
   display: flex;
   justify-content: space-between;
+}
+@media only screen and (max-width: 600px) {
+  footer .container .brand-number .icon-number {
+    margin: auto;
+    width: 80%;
+  }
 }
 footer .container .brand-number .icon-number i {
   width: 7%;
@@ -502,19 +817,41 @@ footer .container .brand-number .icon-number p {
   font-size: 10px;
   width: 90%;
 }
-footer .container .destination {
+@media only screen and (max-width: 600px) {
+  footer .container .brand-number .icon-number p {
+    font-size: 14px;
+  }
+}
+footer .container .flex {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  position: relative;
+}
+@media only screen and (max-width: 600px) {
+  footer .container .flex {
+    padding: 30px;
+    justify-content: space-between;
+  }
+}
+footer .container .flex .destination {
   color: #fff;
   margin-top: 100px;
 }
-footer .container .destination h6 {
+@media only screen and (max-width: 600px) {
+  footer .container .flex .destination {
+    margin-top: 0;
+  }
+}
+footer .container .flex .destination h6 {
   font-size: 13px;
   margin-bottom: 15px;
 }
-footer .container .destination ul {
+footer .container .flex .destination ul {
   list-style-type: none;
   color: #fff;
 }
-footer .container .destination ul li {
+footer .container .flex .destination ul li {
   display: inline-block;
   width: 100%;
   height: 25px;
@@ -522,19 +859,24 @@ footer .container .destination ul li {
   font-size: 13px;
   font-weight: 200;
 }
-footer .container .links {
+footer .container .flex .links {
   color: #fff;
   margin-top: 100px;
 }
-footer .container .links h6 {
+@media only screen and (max-width: 600px) {
+  footer .container .flex .links {
+    margin-top: 0;
+  }
+}
+footer .container .flex .links h6 {
   font-size: 13px;
   margin-bottom: 15px;
 }
-footer .container .links ul {
+footer .container .flex .links ul {
   list-style-type: none;
   color: #fff;
 }
-footer .container .links ul li {
+footer .container .flex .links ul li {
   display: inline-block;
   width: 100%;
   height: 25px;
@@ -542,15 +884,31 @@ footer .container .links ul li {
   font-size: 13px;
   font-weight: 200;
 }
-footer .container .social {
+footer .container .flex .social {
   color: #fff;
   margin-top: 100px;
 }
-footer .container .social h6 {
+@media only screen and (max-width: 600px) {
+  footer .container .flex .social {
+    position: absolute;
+    color: #fff;
+    top: 120px;
+    left: 220px;
+    margin: 0;
+    width: 50%;
+  }
+}
+footer .container .flex .social h6 {
   font-size: 13px;
   margin-bottom: 15px;
 }
-footer .container .social .icon-text {
+@media only screen and (max-width: 600px) {
+  footer .container .flex .social h6 {
+    display: none;
+    margin: 0;
+  }
+}
+footer .container .flex .social .icon-text {
   width: 90%;
   height: auto;
   margin: 0;
@@ -558,11 +916,27 @@ footer .container .social .icon-text {
   display: flex;
   justify-content: space-between;
 }
-footer .container .social .icon-text i {
+@media only screen and (max-width: 600px) {
+  footer .container .flex .social .icon-text {
+    width: 50%;
+  }
+}
+footer .container .flex .social .icon-text i {
   width: 10%;
   margin-left: 10px;
 }
-footer .container .social .icon-text p {
+@media only screen and (max-width: 600px) {
+  footer .container .flex .social .icon-text i {
+    width: 6%;
+  }
+}
+footer .container .flex .social .icon-text p {
   font-size: 10px;
   width: 80%;
+}
+@media only screen and (max-width: 600px) {
+  footer .container .flex .social .icon-text p {
+    font-size: 13px;
+    font-weight: 200;
+  }
 }/*# sourceMappingURL=Greece.css.map */

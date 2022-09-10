@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Trippadi</title>
+    <link rel="icon" href="/images/Logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300&display=swap');
@@ -31,32 +32,37 @@
         
         
                 <div class="login-cart">
-                    <button><span></span>Itinerary</button>
-                    <button class="signin-transparent">Sign in</button>
-                    <button class="signout-blue">Sign Up</button>
+                    <a href="Itinerary.html"><button id="Itinerary-icon"><i class="fa-solid fa-bag-shopping"></i>
+                        <p>Itinerary <span></span></p></button></a>
+                    <a href="signin.html"><button id="signin-transparent">Sign in</button></a>
+                    <a href="Signup1.html"><button id="signout-blue">Sign Up</button></a>
                 </div>
 
-
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
             </div>
         </nav>
 
         <div class="list-container">
             <ul>
-                <a href="switzerland.html">
-                    <li>Switzerland</li>
-                </a>
+                <li>
+                    <a href="switzerland.html">Switzerland</a>
+                </li>
 
-                <a href="#">
-                    <li>Hotel</li>
-                </a>
+                <li>
+                    <a href="#">Hotels</a>
+                </li>
 
-                <a href="#">
-                    <li>Restaurauts</li>
-                </a>
+                <li>
+                    <a href="#">Restaurants</a>
+                </li>
 
-                <a href="#">
-                    <li>Places to visit</li>
-                </a>
+                <li>
+                    <a href="#">Places to visit</a>
+                </li>
                 
             </ul>
         </div>
@@ -64,7 +70,7 @@
         <div class="text-button-container">
             <h1>Explore Switzerland</h1>
             <div class="button">
-                <button type="submit"> <i class="fa-solid fa-heart"></i> <p>Add to Itinerary</p></button>
+                <button type="submit" class="addToCart"> <i class="fa-solid fa-heart"></i> <p>Add to Itinerary</p></button>
             </div>
         </div>
 
@@ -74,7 +80,7 @@
                 <div class="img2"></div>
                 <div class="img3"></div>
             </div>
-            <a id="show-more" href="https://unsplash.com/s/photos/greece">
+            <a id="show-more" href="https://unsplash.com/s/photos/switzerland">
                 <button>Show more Photos</button>
             </a>
         </div>
@@ -108,45 +114,64 @@
         <div class="container">
             <h3>Most Popular Destinations</h3>
             <div class="sliderwrapper">
-
-                <div class="slides" id="img1">
-                    <a href="#">
-                        <button class="orange">Athens</button>
-                    </a>
-                </div>
-
-                <div class="slides" id="img2">
-                    <a href="#">
-                        <button class="orange">Santorini</button>
-                    </a>
-                </div>
-
-                <div class="slides" id="img3">
-                    <a href="#">
-                        <button class="orange">Mykonos</button>
-                    </a>
-                </div>
                 
-                <div class="slides" id="img4">
-                    <a href="#">
-                        <button class="orange">Italy</button>
-                    </a>
-                </div>
+                <ul class ="sliderfirst">
+                    <li>
+                        <div class="slides" id="img1">
+                            <a href="#">
+                                <button class="orange">Basel</button>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slides" id="img2">
+                            <a href="#">
+                                <button class="orange">Interlaken</button>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slides" id="img3">
+                            <a href="#">
+                                <button class="orange">Lausanne</button>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
 
-                <div class="slides" id="img5">
-                    <a href="#">
-                        <button class="orange">Dubai</button>
-                    </a>
-                </div>
-
-                <div class="slides" id="img6">
-                    <a href="#">
-                        <button class="orange">Rome</button>
-                    </a>
-                </div>
-
+                <ul class="sliderfirst">
+                    <li>
+                        <div class="slides" id="img4">
+                            <a href="#">
+                                <button class="orange">Lugano</button>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slides" id="img5">
+                            <a href="#">
+                                <button class="orange">Saint Moritz</button>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slides" id="img6">
+                            <a href="#">
+                                <button class="orange">Bern</button>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
             </div>
 
+            <div id="arrow">
+                <div onclick="plusSlides(-1)" id="slide-left">
+                    <i id="left" class="fa-solid fa-arrow-left"></i>
+                </div>
+                <div onclick="plusSlides(1)" id="slide-right">
+                    <i id="right" class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -211,7 +236,7 @@
                     </p>
                 </div>
 
-                <div class="textbox">
+                <div class="textbox" id="noshow">
                     <div class="img-textbox">
                         <div class="img" id="four">
     
@@ -251,34 +276,40 @@
                 
             </div>
 
-            <div class="destination">
-                <h6>Top Destination</h6>
+            <div class="flex">
+                <div class="destination">
+                    <h6>Top Destination</h6>
+    
+                    <ul>
+                        <a href="#"><li>Miami</li></a>
+                        <a href="#"><li>London</li></a>
+                        <a href="#"><li>Dubai</li></a>
+                        <a href="#"><li>Zanziba</li></a>
+                    </ul>
+                </div>
+    
+                <div class="links">
+    
+                    <h6>Useful links</h6>
+                    <ul>
+                        <li>About us</li>
+                        <li>Blog</li>
+                    </ul>
+                </div>
 
-                <ul>
-                    <a href="#"><li>Miami</li></a>
-                    <a href="#"><li>London</li></a>
-                    <a href="#"><li>Dubai</li></a>
-                    <a href="#"><li>Zanziba</li></a>
-                </ul>
-            </div>
-
-            <div class="links">
-
-                <h6>Useful links</h6>
-                <ul>
-                    <li>About us</li>
-                    <li>Blog</li>
-                </ul>
-            </div>
-
-            <div class="social">
-                <h6>Socials</h6>
-                <div class="icon-text">
-                    <i class="fa-brands fa-instagram"></i>
-                    <p>My Trippadi</p>
+                <div class="social">
+                    <h6>Socials</h6>
+                    <div class="icon-text">
+                        <i class="fa-brands fa-instagram"></i>
+                        <p>My Trippadi</p>
+                    </div>
                 </div>
             </div>
+
+            
         </div>
     </footer>
+
+    <script src="/script/country.js"></script>
 </body>
 </html>

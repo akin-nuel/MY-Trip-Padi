@@ -22,6 +22,10 @@
     margin: 0;
     padding:0;
 
+    @media only screen and (max-width: 600px){
+        height:750px;
+    }
+
     nav{
         width:100%;
         height:70px;
@@ -52,6 +56,10 @@
                     background-repeat: no-repeat;
                     background-size: contain;
                     margin:0 auto;
+
+                    @media only screen and (max-width: 600px){
+                        width:80%;
+                    }
                 }
             }
     
@@ -60,6 +68,10 @@
                 height:auto;
                 min-width: 200px;
                 margin:auto;
+
+                @media only screen and (max-width: 600px){
+                    display: none;
+                }
                 
 
                 .search-bar{
@@ -103,11 +115,31 @@
             }
     
             .login-cart{
-                width:35%;
-                height:50px;
+                width:30%;
+                height:auto;
                 margin:0;
                 padding:0;
+                display:flex;
+                justify-content: space-between;
 
+                @media only screen and (max-width: 600px){
+                    position:fixed;
+                    left:-100%;
+                    top:0;
+                    gap:0;
+                    background-color: #091936;
+                    flex-direction: column;
+                    width:80%;
+                    height:100vh;
+                    z-index:999;
+                    text-align: center;
+                    transition: 0.3s;
+                    justify-content: flex-start;
+
+                    &.active{
+                        left:0;
+                    }
+                }
                 button{
                     width:100px;
                     height:40px;
@@ -116,42 +148,108 @@
                     border:0;
                     border-radius:5px;
                     color:#ffffff;
-                    background-color: transparent;
-
-                    span{
-                        width:20px;
-                        height:20px;
-                        margin:0;
-                        padding:0;
-                        background-image: url("/icons/Itineary\ icon.png");
-                        background-position: center;
-                        background-repeat: no-repeat;
-                        background-size: cover;
-                    }
+                    font-size: 14px;
                 }
 
-                button:hover{
+                #signin-transparent{
+                    background-color: transparent;
+                    border:0;
+
+                }
+
+                a{
+                    text-decoration: none;
+                    
+                    #Itinerary-icon{
+                        background-color: transparent;
+                        border:0;
+                        position:relative;   
+                        display:flex;
+                        width:100%;
+                        height:auto;
+    
+                        i{
+                            width:20px;
+                            height:20px;
+                            position:absolute;
+                            top:13px;
+                            left:0;
+                            
+
+                            @media only screen and (max-width: 600px){
+                                left:185px;
+                            }
+    
+                        }
+    
+                        p{
+                            width:60px;
+                            height:auto;
+                            margin:13px auto;
+                            font-size: 14px;
+                        }
+    
+                        &:hover{
+                            font-weight:700;
+                            border:1px solid #0C8CE9;
+                        }
+                    }
+    
+                }
+
+                #signin-transparent:hover{
                     font-weight:700;
                     border:1px solid #0C8CE9;
                 }
 
-                .signin-transparent{
-                    
-                    border:0;   
-                }
-
-                
-
-                .signout-blue{
+                #signout-blue{
                     background-color: #0C8CE9;
 
                 }
 
-                .signout-blue:hover{
+                #signout-blue:hover{
                     font-weight:700;
                     border:1px solid #0C8CE9;
                 }
-            
+
+            }
+
+            .hamburger{
+                display: none;
+                cursor: pointer;
+
+                @media only screen and (max-width: 600px) {
+                    display: block;
+                    width:10%;
+                    height:50px;
+                    cursor: pointer;
+
+                    .bar{
+                        width: 70%;
+                        height:3px;
+                        background-color: #fff;
+                        margin:5px auto 7px auto;
+                        -webkit-transition: all 0.3s ease-in-out;
+                        transition: all 0.3s ease-in-out;
+
+                         
+                    }
+
+                    &.active .bar:nth-child(2){
+                         opacity:0;
+                    }
+
+                    &.active .bar:nth-child(1){
+                         transform: translateY(10px) rotate(45deg);
+                    }
+
+                    &.active .bar:nth-child(3){
+                         transform: translateY(-9px) rotate(-45deg);
+                    }
+
+                    
+                }
+        
             }
         
         }
@@ -164,29 +262,45 @@
         padding:0;
         margin: 50px auto;
 
+        @media only screen and (max-width: 600px){
+            display:90%;
+            margin:50px auto;
+        }
+
+
         ul{
-            width:60%;
+            width:70%;
             text-decoration: none;
 
-            a{
-                font-weight: 400;
-                list-style-type: none;
+            @media only screen and (max-width: 600px){
+                width:80%;
+            }
     
+            li{
+                display:inline-block;
+                width:23%;
+                display:20px;
+                color:black;
 
-                li{
-                    display:inline-block;
-                    width:24%;
-                    display:20px;
-                    color:black;
+                @media only screen and (max-width: 600px){
+                    font-size: 12px;
                 }
+    
+                a{
+                    font-weight: 500;
+                    text-decoration: none;
+                    color:#000;
+                }
+    
+                :hover{
+                    font-weight: 900;
+                    color:#1a1818;
+                }
+                    
+    
             }
-
-            a:hover{
-                font-weight: 600;
-                color:#1a1818;
-            }
-            
         }
+        
             
     }
     
@@ -202,6 +316,10 @@
             width:50%;
             font-size: 35px;
             font-weight: 600;
+
+            @media only screen and (max-width: 600px){
+                font-size: 25px;
+            }
         }
         
 
@@ -210,6 +328,10 @@
             height:auto;
             margin:0;
             padding:0;
+
+            @media only screen and (max-width: 600px){
+                width:22%;
+            }
 
             button{
                 width:100%;
@@ -225,12 +347,20 @@
                     height:20px;
                     margin:17px 0px 17px 15px;
                     color:red;
+
+                    @media only screen and (max-width: 600px){
+                        margin:17px 0 17px 8px;
+                    }
                 }
 
                 p{
                     width:80%;
                     height:auto;
                     margin: auto 0;
+
+                    @media only screen and (max-width: 600px){
+                        font-size: 10px;
+                    }
                 }
             }
         }
@@ -246,6 +376,10 @@
         grid-gap:10px;
         position:relative;
         margin-bottom: 20px;
+
+        @media only screen and (max-width: 600px){
+            display: block;
+        }
     }
 
     .img1{
@@ -257,6 +391,27 @@
         width:100%;
         object-fit: fill;
         border-radius: 7px;
+
+        @media only screen and (max-width: 600px){
+
+            height:450px;
+            animation:slider 20s infinite ease-in-out;
+
+            @keyframes slider {
+                0%{
+                    background-image: url("/images/Greece\ 2\ Img.png")
+                }
+
+                40%{
+                    background-image: url("/images/Greece\ Img.png");
+                }
+
+                80%{
+                    background-image: url("/images/Greece\ 5.jpg");
+                }
+            }
+        }
+        
     }
 
     .img2{
@@ -269,6 +424,10 @@
         object-fit: fill;
         margin-bottom: 1em;
         border-radius: 7px;
+
+        @media only screen and (max-width: 600px){
+            display: none;
+        }
     }
 
     .img3{
@@ -280,6 +439,10 @@
         width:100%;
         object-fit: fill;
         border-radius: 7px;
+
+        @media only screen and (max-width: 600px){
+            display: none;
+        }
     }
 
     #show-more{
@@ -289,6 +452,10 @@
         top:430px;
         left:800px;
         cursor: pointer;
+
+        @media only screen and (max-width: 600px){
+            display: none;
+        }
 
         button{
             width:150px;
@@ -320,6 +487,10 @@
             color:#404040;
             margin-bottom:20px;
             font-weight: 700;
+
+            @media only screen and (max-width: 600px){
+                font-size: 12px;
+            }
         }
 
         p{
@@ -328,6 +499,10 @@
             line-height:20px;
             margin-bottom: 20px;
 
+            @media only screen and (max-width: 600px){
+                font-size: 10px;
+                line-height: 15px;
+            }
         }
     }
 }
@@ -344,11 +519,20 @@
         margin:auto;
         padding:0;
 
+        @media only screen and (max-width: 600px){
+            margin-top: 20px;;
+        }
+
         h3{
             width:30%;
             font-size: 16px;
             font-weight: 600;
             margin-bottom: 30px;;
+
+            @media only screen and (max-width: 600px){
+                font-size: 14px;
+                width:50%;
+            }
         }
 
         .sliderwrapper{
@@ -356,80 +540,140 @@
             height:400px;
             position: relative;
             overflow-y: hidden;
-            overflow-x: scroll;
-            white-space: nowrap;
+            overflow-x: hidden;
+            
+            
 
-            .slides{
-                width:30%;
+            ul{
+                width:100%;
                 height:400px;
-                display:inline-block;
-                margin-right:40px;
-                position:relative;
+                white-space: nowrap;
+                position: relative;
+                display: inline-block;
+                
+                li{
+                    width:30%;
+                    height:400px;
+                    display:inline-block;
+                    margin-right:40px;
+                    position:relative;
 
-                &:last-child{
-                    border-radius: 10px;
-                }
+                    @media only screen and (max-width: 600px){
+                        width:100%;
+                    }
 
-                a{
-                    text-decoration: none;
-                    cursor:pointer;
-
-                    .orange{
-                        background-color: #FBD35B;
-                        width:120px;
-                        height:40px;
-                        position:absolute;
-                        top:300px;
-                        left:30px;
-                        border:0;
-                        border-radius: 10px;
-    
+                    .slides{
+                        width:100%;
+                        height:400px;
+                        
+                        
+                        @media only screen and (max-width: 600px){
+                            width:100%;
+                        }
+        
+        
+                        a{
+                            text-decoration: none;
+                            
+        
+                            .orange{
+                                background-color: #FBD35B;
+                                width:120px;
+                                height:40px;
+                                position:absolute;
+                                top:300px;
+                                left:30px;
+                                border:0;
+                                border-radius: 10px;
+            
+                            }
+                        }
+                    }
+        
+                    
+        
+                    #img1{
+                        background-image: url("/images/Greece\ 3.jpg");
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+        
+                    #img2{
+                        background-image: url("/images/Greece\ 4.jpg");
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+        
+                    #img3{
+                        background-image: url("/images/Greece\ 5.jpg");
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+        
+                    #img4{
+                        background-image: url("/images/Greece\ 6.jpg");
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+        
+                    #img5{
+                        background-image: url("/images/Greece\ 2\ Img.png");
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+        
+                    #img6{
+                        background-image: url("/images/Greece\ Img.png");
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
                     }
                 }
+    
+            }
+        }
+
+        #arrow{
+            width:10%;
+            height:50px;
+            margin:auto;
+            display:flex;
+            justify-content: space-between;
+            
+            .slide-right{
+                width:30px;
+                height:30px;
+                border:1px solid #000;
+
+                i{
+                
+                    font-size: 20px;;
+                    
+                    width:30px;
+                    height:30px;
+                
+                }
             }
 
-            #img1{
-                background-image: url("/images/Greece\ 3.jpg");
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
+            .slide-left{
+                width:30px;
+                height:30px;
+                border:1px solid #000;
 
-            #img2{
-                background-image: url("/images/Greece\ 4.jpg");
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
+                i{
+                
+                    font-size: 20px;;
+                    
+                    width:30px;
+                    height:30px;
+                
+                }
             }
-
-            #img3{
-                background-image: url("/images/Greece\ 5.jpg");
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-
-            #img4{
-                background-image: url("/images/Greece\ 6.jpg");
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-
-            #img5{
-                background-image: url("/images/Greece\ 2\ Img.png");
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-
-            #img6{
-                background-image: url("/images/Greece\ Img.png");
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-
         }
     }
 }
@@ -440,6 +684,10 @@
     height:700px;
     margin:0;
     padding:0;
+
+    @media only screen and (max-width: 600px){
+        height:800px;
+    }
 
     .container{
         width:85%;
@@ -452,6 +700,13 @@
             font-size: 16px;
             font-weight: 600;
             margin-bottom: 30px;;
+
+            @media only screen and (max-width: 600px){
+                width:50%;
+                margin:20px auto;
+                font-size: 14px;
+                text-align: center;
+            }
         }
 
         .grid-container{
@@ -464,11 +719,19 @@
             grid-gap:1em;
             margin-bottom: 30px;
 
+            @media only screen and (max-width: 600px){
+                display: block;
+            }
+
             .textbox{
                 width:100%;
                 height:auto;
                 box-shadow: 1px 1px 20px 0.5px #ddd;
                 padding:30px;
+
+                @media only screen and (max-width: 600px){
+                    margin-bottom:30px;
+                }
 
                 .img-textbox{
                     width:50%;
@@ -521,8 +784,21 @@
                 p{
                     font-size: 11px;
                     line-height: 18px;
+
+                    @media only screen and (max-width: 600px){
+                        font-size: 9px;
+                        line-height: 13px;;
+                    }
                 }
             }
+
+            #noshow{
+
+                @media only screen and (max-width: 600px){
+                    display: none;
+                }
+            }
+
         }
 
         .button-link-container{
@@ -533,6 +809,10 @@
             padding: 0;
             justify-content: space-between;
 
+            @media only screen and (max-width: 600px){
+                display: block;
+            }
+
             button{
                 width:100%;
                 height:50px;
@@ -541,11 +821,22 @@
                 background-color: #0C8CE9;
                 color:#fff;
                 border-radius: 7px;
+
+                @media only screen and (max-width: 600px){
+                    display: none;
+                }
             }
 
             a{
                 width:12%;
                 margin:auto 0;
+
+                @media only screen and (max-width: 600px){
+                    display: block;
+                    margin:auto;
+                    width:30%;
+                    font-size: 14px;;
+                }
             }
         }
     }
@@ -558,13 +849,21 @@ footer{
     padding:0;
     background-color: #091936;
 
+    @media only screen and (max-width: 600px){
+        height:auto;
+    }
+
     .container{
         width:85%;
         height:auto;
         margin: auto;
         padding:0;
         display:grid;
-        grid-template-columns: 3fr 1fr 1fr 1fr;
+        grid-template-columns: 2fr 3fr;
+
+        @media only screen and (max-width: 600px){
+            display: block;
+        }
     
 
         .brand-number{
@@ -574,13 +873,25 @@ footer{
             h1{
                 font-size: 18px;
                 margin-bottom:10px;
+
+                @media only screen and (max-width: 600px){
+                    text-align: center;
+                    font-weight: 600;
+                    font-size: 17px;
+                    margin-bottom: 30px;;
+                }
             }
 
             .icon-number{
-                width:40%;
+                width:60%;
                 height:auto;
                 display:flex;
                 justify-content: space-between;
+
+                @media only screen and (max-width: 600px){
+                    margin:auto;
+                    width:80%;
+                }
 
                 i{
                     width: 7%;
@@ -590,83 +901,136 @@ footer{
                 p{
                     font-size: 10px;
                     width:90%;
+
+                    @media only screen and (max-width: 600px){
+                        font-size: 14px;
+                    }
                 }
             }
         }
 
-        .destination{
-            color:#fff;
-            margin-top:100px;
+        .flex{
+            padding:0;
+            margin: 0;
+            display:flex;
+            position: relative;;
 
-            h6{
-                font-size: 13px;
-                margin-bottom: 15px;
-            }
-
-            ul{
-                list-style-type: none;
-                color:#fff;
-
-                li{
-                    display: inline-block;
-                    width:100%;
-                    height:25px;
-                    color: #fff;
-                    font-size: 13px;
-                    font-weight: 200;
-                }
-            }
-        }
-
-        .links{
-            color:#fff;
-            margin-top:100px;
-
-            h6{
-                font-size: 13px;
-                margin-bottom: 15px;
-            }
-
-            ul{
-                list-style-type: none;
-                color:#fff;
-
-                li{
-                    display: inline-block;
-                    width:100%;
-                    height:25px;
-                    color: #fff;
-                    font-size: 13px;
-                    font-weight: 200;
-                }
-            }
-        }
-
-        .social{
-            color:#fff;
-            margin-top:100px;
-
-            h6{
-                font-size: 13px;
-                margin-bottom: 15px;
-            }
-
-            .icon-text{
-                width:90%;
-                height:auto;
-                margin:0;
-                padding:0;
-                display: flex;
+            @media only screen and (max-width: 600px){
+                padding:30px;
                 justify-content: space-between;
+            }
 
-                i{
-                    width: 10%;
-                    margin-left:10px;
+            .destination{
+                color:#fff;
+                margin-top:100px;
+
+                @media only screen and (max-width: 600px){
+                    margin-top:0;
                 }
+    
+                h6{
+                    font-size: 13px;
+                    margin-bottom: 15px;
+                }
+    
+                ul{
+                    list-style-type: none;
+                    color:#fff;
+    
+                    li{
+                        display: inline-block;
+                        width:100%;
+                        height:25px;
+                        color: #fff;
+                        font-size: 13px;
+                        font-weight: 200;
+                    }
+                }
+            }
+    
+            .links{
+                color:#fff;
+                margin-top:100px;
 
-                p{
-                    font-size: 10px;
-                    width:80%;
+                @media only screen and (max-width: 600px){
+                    margin-top:0;
+                }
+    
+                h6{
+                    font-size: 13px;
+                    margin-bottom: 15px;
+                }
+    
+                ul{
+                    list-style-type: none;
+                    color:#fff;
+    
+                    li{
+                        display: inline-block;
+                        width:100%;
+                        height:25px;
+                        color: #fff;
+                        font-size: 13px;
+                        font-weight: 200;
+                    }
+                }
+            }
+
+            .social{
+                color:#fff;
+                margin-top:100px;
+    
+                @media only screen and (max-width: 600px){
+                    position:absolute;
+                    color:#fff;
+                    top:120px;
+                    left:220px;
+                    margin: 0;
+                    width:50%;
+                }
+    
+                h6{
+                    font-size: 13px;
+                    margin-bottom: 15px;
+
+                    @media only screen and (max-width: 600px){
+                        display:none;
+                        margin:0;
+                    }
+                }
+    
+                .icon-text{
+                    width:90%;
+                    height:auto;
+                    margin:0;
+                    padding:0;
+                    display: flex;
+                    justify-content: space-between;
+
+                    @media only screen and (max-width: 600px){
+                        width:50%;
+    
+                    }
+    
+                    i{
+                        width: 10%;
+                        margin-left:10px;
+
+                        @media only screen and (max-width: 600px){
+                            width:6%;
+        
+                        }
+                    }
+    
+                    p{
+                        font-size: 10px;
+                        width:80%;
+
+                        @media only screen and (max-width: 600px){
+                            font-size: 13px;
+                            font-weight: 200;
+                        }
+                    }
                 }
             }
         }

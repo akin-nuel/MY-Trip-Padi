@@ -22,6 +22,10 @@
     margin: 150px auto;
     padding: 0;
 
+    @media only screen and (max-width: 600px){
+        width:80%;
+    }
+
     #icon{
         width:70px;
         height:70px;
@@ -45,6 +49,11 @@
         font-size: 24px;
         font-weight: 700;
         text-align: center;
+
+        @media only screen and (max-width: 600px){
+            width:60%;
+            font-size: 20px;
+        }
     }
 
     p{
@@ -52,6 +61,10 @@
         margin: 15px auto 60px auto;
         width:60%;
         text-align: center;
+
+        @media only screen and (max-width: 600px){
+            width:75%;
+        }
 
         a{
             color:#7D7D7D;
