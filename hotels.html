@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Hotels </title>
+    <link rel="stylesheet" href="/style/hotels.css" type="text/css">
+    <link rel="icon" href="./main/images/Logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
+</head>
+<body>
+    <!-- ========== HEADER NAV ============ -->
+    <header>
+        
+
+        <nav class="navbar">
+             <a href="#" class="nav-branding">
+               <img src="./main/images/Logo.png" alt="">  
+             </a>
+            <div class="searching">
+                <input type="text" placeholder="Where would you like to go?" id="where"/> 
+                <i class="fa-solid fa-magnifying-glass" id="fa"></i>
+            </div>
+             <ul class="nav-menu">
+                <li class="nav-item"><a href="Itinerary.html" class="nav-link"><i class="fa fa-shopping-bag" aria-hidden="true" id="iter"></i> &nbsp; Itinerary</a></li>
+                <li class="nav-item"><a href="signin.html" class="nav-link">Sign in</a></li>
+                <li class="nav-item"><a href="Signup1.html" class="nav-link">Sign up</a></li>
+             </ul>
+        </nav>
+        <div class="hamburger">
+         <span class="bar"></span>
+         <span class="bar"></span>
+         <span class="bar"></span>
+        </div>
+     </header>
+    <!-- ========== END OF HEADER NAV ============ -->
+
+    <!-- =========== link section =============== -->
+    <section class="name">
+            <ul id="name"> 
+            <li> <a href="#"> Greece</a> </li>
+            <li> <a href="hotels.html"> Hotels </a> </li>
+            <li> <a href="resturant.html"> Resturants</a> </li>
+            <li> <a href="places.html"> Place to visit </a></li>
+        </ul>        
+    </section>
+     <!-- =========== link section =============== -->
+    <section class="search-wrapper"> 
+            <div id="hotel">
+                <h2> Hotels and places to stay </h2>
+                <div class="search"> 
+                    <i class="fa-solid fa-magnifying-glass" id="fafa"></i>
+                    <input id="search-input" type="search" placeholder="Search for state in Greece"> 
+                    <button onclick="api()" id="search-btn"> search </button> 
+                </div>
+            </div>
+    </section>
+    <section class="hotel-container">
+        <div id="hotel-text">
+            <h2 id="count"></h2>
+            <h4> Sort by: 
+                <select name="choose">
+                    <option value="price"> price </option>
+                    <option value="rate"> Rate</option>
+                </select>
+            </h4>
+        </div>
+        <div id="hotel-list" class="hotel-list"> 
+            <div class="hotel1">
+               <a href="hotelsearch.html">  <img id="hotel1" src="main/api/hotel1.jpg"> </a>
+                <h4> Santorini Camping & Hostel </h4>
+                <p> Greece </p>
+                <p></p>
+                <ul class="user">
+                    <li id="review"> 4.5 &nbsp;<i class="fa fa-star" aria-hidden="true"></i> </li>
+                    <li id="add"> <i class="fa fa-heart" aria-hidden="true"></i> &nbsp; save </li>
+                </ul>
+            </div>
+            <div class="hotel1">
+                <a href="hotelsearch.html"> <img id="hotel1" src="main/api/hotel2.jpg"></a>
+                <h4> Blue Sea - Argyrades Beach  </h4>
+                <p> Greece </p>
+                <p></p>
+                <ul class="user">
+                    <li id="review"> 4.5 &nbsp;<i class="fa fa-star" aria-hidden="true"></i> </li>
+                    <li id="add"> <i class="fa fa-heart" aria-hidden="true"></i> &nbsp; save </li>
+                </ul>
+            </div>
+            <div class="hotel1">
+              <a href="hotelsearch.html">  <img id="hotel1" src="main/api/hotel3.jpg">  </a>
+                <h4> Mitsis Grand Hotel Beach Hotel </h4>
+                <p> Greece </p>
+                <p></p>
+                <ul class="user">
+                    <li id="review"> 4.5 &nbsp;<i class="fa fa-star" aria-hidden="true"></i> </li>
+                    <li id="add"> <i class="fa fa-heart" aria-hidden="true"></i> &nbsp; save </li>
+                </ul>
+            </div>
+            <div class="hotel1">
+                <a href="hotelsearch.html"> <img id="hotel1" src="main/api/hotel4.jpg"> </a>
+                <h4> President Hotel </h4>
+                <p> Greece </p>
+                <p></p>
+                <ul class="user">
+                    <li id="review"> 4.5 &nbsp;<i class="fa fa-star" aria-hidden="true"></i> </li>
+                    <li id="add"> <i class="fa fa-heart" aria-hidden="true"></i> &nbsp; save </li>
+                </ul>
+            </div>
+            <div class="hotel1">
+                <a href="hotelsearch.html"> <img id="hotel1" src="main/api/hotel42.jpg"> </a>
+                <h4> The Stanley </h4>
+                <p> Greece </p>
+                <p></p>
+                <ul class="user">
+                    <li id="review"> 4.5 &nbsp;<i class="fa fa-star" aria-hidden="true"></i> </li>
+                    <li id="add"> <i class="fa fa-heart" aria-hidden="true"></i> &nbsp; save </li>
+                </ul>
+            </div>
+            <div class="hotel1">
+               <a href="hotelsearch.html">  <img id="hotel1" src="main/api/hotel6.jpg"> </a>
+                <h4> Strada Marina </h4>
+                <p> Greece </p>
+                <p></p>
+                <ul class="user">
+                    <li id="review"> 4.5 &nbsp;<i class="fa fa-star" aria-hidden="true"></i> </li>
+                    <li id="add"> <i class="fa fa-heart" aria-hidden="true"></i> &nbsp; save </li>
+                </ul>
+            </div>
+            <div class="hotel1">
+                <img id="hotel1" src="main/api/hotel7.jpg">
+                <h4> Corfu Holiday Palace </h4>
+                <p> Greece </p>
+                <p></p>
+                <ul class="user">
+                    <li id="review"> 4.5 &nbsp;<i class="fa fa-star" aria-hidden="true"></i> </li>
+                    <li id="add"> <i class="fa fa-heart" aria-hidden="true"></i> &nbsp; save </li>
+                </ul>
+            </div>
+            <div class="hotel1">
+                <img id="hotel1" src="main/api/hotel8.jpg">
+                <h4> Palatino Hotel </h4>
+                <p> Greece </p>
+                <p></p>
+                <ul class="user">
+                    <li id="review"> 4.5 &nbsp;<i class="fa fa-star" aria-hidden="true"></i> </li>
+                    <li id="add"> <i class="fa fa-heart" aria-hidden="true"></i> &nbsp; save </li>
+                </ul>
+            </div>
+            <div class="hotel1">
+                <img id="hotel1" src="main/api/hotel9.jpg">
+                <h4> Poseidon Hotel Suites</h4>
+                <p> Greece </p>
+                <p></p>
+                <ul class="user">
+                    <li id="review"> 4.5 &nbsp;<i class="fa fa-star" aria-hidden="true"></i> </li>
+                    <li id="add"> <i class="fa fa-heart" aria-hidden="true"></i> &nbsp; save </li>
+                </ul>
+            </div>
+            <div class="hotel1">
+               <a href="hotelsearch.html">  <img id="hotel1" src="main/api/hotel10.jpg"> </a>
+                <h4> Grand Hyatt Athens </h4>
+                <p> Greece </p>
+                <p></p>
+                <ul class="user">
+                    <li id="review"> 4.5 &nbsp;<i class="fa fa-star" aria-hidden="true"></i> </li>
+                    <li id="add"> <i class="fa fa-heart" aria-hidden="true"></i> &nbsp; save </li>
+                </ul>
+            </div>
+            <div class="hotel1">
+                <img id="hotel1" src="main/api/hotel11.jpg">
+                <h4> Meandros Boutique & Spa Hotel - Adults Only </h4>
+                <p> Greece </p>
+                <p></p>
+                <ul class="user">
+                    <li id="review"> 4.5 &nbsp;<i class="fa fa-star" aria-hidden="true"></i> </li>
+                    <li id="add"> <i class="fa fa-heart" aria-hidden="true"></i> &nbsp; save </li>
+                </ul>
+            </div>
+            <div class="hotel1">
+                 <a href =" hotelsearch.html"> <img id="hotel1" src="main/api/hotel12.jpg"> </a>
+                <h4> Royal Olympic Hotel </h4>
+                <p> Greece </p>
+                <p></p>
+                <ul class="user">
+                    <li id="review"> 4.5 &nbsp;<i class="fa fa-star" aria-hidden="true"></i> </li>
+                    <li id="add"> <i class="fa fa-heart" aria-hidden="true"></i> &nbsp; save </li>
+                </ul>
+            </div>
+                  
+        </div>
+    </section>
+    <footer>
+        <div class="mobile-show">
+            <h4> My trip padi </h2>
+            <p> <i class="fa fa-phone" aria-hidden="true"></i> +234-708-653-5089, +234-703-506-9534  </p>
+        </div>
+        <div class="end">
+            <div id="mobile-hide">
+                <h4> My trip padi </h2>
+                    <p> <i class="fa fa-phone" aria-hidden="true"></i> +234-708-653-5089, +234-703-506-9534  </p>
+                </div>
+            
+            <div id="destinations"> 
+                <h4> Top Destinations </h3>
+                <p> New york </p>
+                <p> London </p>
+                <p> Dubai </p>
+                <p> Australia </p>
+            </div>
+            <div id="link">
+                <h4> Useful links </h4>
+                <li> <a href="404.html" class="about">About us</a></li>
+                <li> <a href= "404.html" class="blog">Blog </a> </li>
+                    <!-- mobile view social -->
+                <li> <a href="#" class="socialmobile"> <img src="main/images/Vector.png"> MyTrippadi </a></li>
+            </div>
+            <div class="social">
+                <h4> Socials </h2>
+                <p> <img src="main/images/Vector.png" alt="#"> MyTrippadi </p>
+            </div>
+        </div>
+    </footer>
+    <script src="/script/triphotel.js"></script>
+</body>
+</html>
