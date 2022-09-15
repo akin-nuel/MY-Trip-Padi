@@ -1,0 +1,134 @@
+@font-face {
+    font-family: NeueMontreal;
+    src: url(neue-font/NeueMontreal-Regular.otf);
+}
+html, body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'NeueMontreal';
+}
+header{
+    background-color:#091936;;
+    position: relative;
+    z-index: 4;
+    height: 6rem;
+}
+li{
+    list-style: none;
+}
+a{
+    /* color: white; */
+    text-decoration: none;
+}
+.navbar{
+    min-height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 12rem;
+
+}
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-top: 2rem;
+    margin-top: 2rem;
+}
+
+.nav-branding{
+    margin-left: 4rem;
+}
+.nav-branding img{
+    margin-top: -1rem;
+    position: absolute;
+}
+.nav-link{
+    transition: 0.7s ease;
+    color: #fff;
+}
+.nav-link:hover{
+    background-color: #077AB7;
+    width: 80px;
+    padding: 0.6rem;
+    border-radius: 4px;
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+    /* padding-bottom: 1rem; */
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+
+}
+.nav-menu1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-top: 2rem;
+    margin-top: 2rem;
+}
+.inside{
+    /* display: grid; */
+    text-align: center;
+}
+.inside text {
+    text-align: center;
+}
+
+@media(max-width:600px){
+    .hamburger{
+        display:block;
+        margin-left: 30rem;
+    }
+    .hamburger.active  .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position: fixed;
+        left: -120%;
+        top: 63px;
+        gap:0;
+        flex-direction: column;
+        background-color: #091936;;
+        width: 70%;
+        text-align: center;
+        transition: 0.3s;
+        justify-content: flex-start;
+        height: 100vh;
+    }
+    .nav-menu1{
+        position: fixed;
+        left: -120%;
+        top: 70px  ;
+        gap:0;
+        flex-direction: column;
+        background-color: #091936;;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .nav-item{
+        margin: 1rem 0;
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+   
+}
