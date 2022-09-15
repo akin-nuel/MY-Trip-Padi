@@ -51,7 +51,7 @@ a{
 #image{
     /* width: 60rem; */
     height: 26rem;
-    background-image: url(/main/images/place_search.png);
+    background-image: url(images/place_search.png);
     position: relative;
     background-repeat: no-repeat;
     background-size:cover;
