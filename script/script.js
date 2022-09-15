@@ -23,6 +23,7 @@ let slideIndex = 1;
 showSlides(slideIndex);
 
 
+/*
 // Next/previous controls
 function plusSlides(n) {
 showSlides(slideIndex += n);
@@ -48,6 +49,7 @@ let dots = document.getElementsByClassName("dot");
   slides[slideIndex-1].style.display = "inline-block";
   dots[slideIndex-1].className += " active";
   }
+  */
 
 
 

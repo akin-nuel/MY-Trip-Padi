@@ -48,7 +48,7 @@
 .heropage nav .container .navbar-brand .box {
   width: 50%;
   height: 50px;
-  background-image: url("/images/Logo.png");
+  background-image: url("./images/Logo.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -330,7 +330,7 @@
   }
 }
 .heropage .img1 {
-  background-image: url("/images/Cribbean beach Img.png");
+  background-image: url("./images/Cribbean beach Img.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -348,29 +348,29 @@
   }
   @-webkit-keyframes slider {
     0% {
-      background-image: url("/images/Cribbean beach Img.png");
+      background-image: url("./images/Cribbean beach Img.png");
     }
     40% {
-      background-image: url("/images/carribean beach2.jpg");
+      background-image: url("./images/carribean beach2.jpg");
     }
     80% {
-      background-image: url("/images/cb3.jpg");
+      background-image: url("./images/cb3.jpg");
     }
   }
   @keyframes slider {
     0% {
-      background-image: url("/images/Cribbean beach Img.png");
+      background-image: url("./images/Cribbean beach Img.png");
     }
     40% {
-      background-image: url("/images/carribean beach2.jpg");
+      background-image: url("./images/carribean beach2.jpg");
     }
     80% {
-      background-image: url("/images/cb3.jpg");
+      background-image: url("./images/cb3.jpg");
     }
   }
 }
 .heropage .img2 {
-  background-image: url("/images/carribean beach2.jpg");
+  background-image: url("./images/carribean beach2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -387,7 +387,7 @@
   }
 }
 .heropage .img3 {
-  background-image: url("/images/cb3.jpg");
+  background-image: url("./images/cb3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -537,37 +537,37 @@
   border-radius: 10px;
 }
 .third .container .sliderwrapper ul li #img1 {
-  background-image: url("/images/carribean beach2.jpg");
+  background-image: url("./images/carribean beach2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .third .container .sliderwrapper ul li #img2 {
-  background-image: url("/images/Carribean beach1.jpg");
+  background-image: url("./images/Carribean beach1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .third .container .sliderwrapper ul li #img3 {
-  background-image: url("/images/Cribbean beach Img.png");
+  background-image: url("./images/Cribbean beach Img.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .third .container .sliderwrapper ul li #img4 {
-  background-image: url("/images/cb2.jpg");
+  background-image: url("./images/cb2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .third .container .sliderwrapper ul li #img5 {
-  background-image: url("/images/Carribean Isalnd 1 Img(New).png");
+  background-image: url("./images/Carribean Isalnd 1 Img(New).png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .third .container .sliderwrapper ul li #img6 {
-  background-image: url("/images/cb4.jpg");
+  background-image: url("./images/cb4.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -670,22 +670,22 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-image: url("/images/review 1.jpg");
+  background-image: url("./images/review 1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .fourth .container .grid-container .textbox .img-textbox #one {
-  background-image: url("/images/g4.jpg");
+  background-image: url("./images/g4.jpg");
 }
 .fourth .container .grid-container .textbox .img-textbox #two {
-  background-image: url("/images/b5.jpg");
+  background-image: url("./images/b5.jpg");
 }
 .fourth .container .grid-container .textbox .img-textbox #three {
-  background-image: url("/images/g6.jpg");
+  background-image: url("./images/g6.jpg");
 }
 .fourth .container .grid-container .textbox .img-textbox #four {
-  background-image: url("/images/o1.jpg");
+  background-image: url("./images/o1.jpg");
 }
 .fourth .container .grid-container .textbox .img-textbox .title {
   width: 78%;
