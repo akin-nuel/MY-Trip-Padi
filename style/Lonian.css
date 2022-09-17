@@ -586,7 +586,7 @@
 .third .container #arrow {
   width: 10%;
   height: 50px;
-  margin: auto;
+  margin: 10px auto;
   display: flex;
   justify-content: space-between;
 }
@@ -682,6 +682,33 @@
   height: 40px;
   border-radius: 50%;
   background-image: url("/images/review 1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.fourth .container .grid-container .textbox .img-textbox #two {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: url("/images/b7.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.fourth .container .grid-container .textbox .img-textbox #three {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: url("/images/g6.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.fourth .container .grid-container .textbox .img-textbox #four {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: url("/images/b5.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

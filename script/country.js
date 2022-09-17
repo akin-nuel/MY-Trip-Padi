@@ -62,6 +62,7 @@ function addToCart(Country){
         }
     })
 }
+
 //adding to cart
 
 let places = [

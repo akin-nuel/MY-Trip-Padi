@@ -375,7 +375,7 @@
   }
 }
 .heropage .img2 {
-  background-image: url("/images/Greece Img.png");
+  background-image: url("/images/greece 10.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -392,7 +392,7 @@
   }
 }
 .heropage .img3 {
-  background-image: url("/images/Greece 2 Img.png");
+  background-image: url("/images/Greece 5.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -548,31 +548,31 @@
   background-size: cover;
 }
 .third .container .sliderwrapper ul li #img2 {
-  background-image: url("/images/Greece 4.jpg");
+  background-image: url("/images/Greece 7.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .third .container .sliderwrapper ul li #img3 {
-  background-image: url("/images/Greece 5.jpg");
+  background-image: url("/images/greece 8.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .third .container .sliderwrapper ul li #img4 {
-  background-image: url("/images/Greece 6.jpg");
+  background-image: url("/images/Greece 9.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .third .container .sliderwrapper ul li #img5 {
-  background-image: url("/images/Greece 2 Img.png");
+  background-image: url("/images/greece 10.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .third .container .sliderwrapper ul li #img6 {
-  background-image: url("/images/Greece Img.png");
+  background-image: url("/images/Greece-2.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -580,7 +580,7 @@
 .third .container #arrow {
   width: 10%;
   height: 50px;
-  margin: auto;
+  margin: 10px auto;
   display: flex;
   justify-content: space-between;
 }

@@ -24,7 +24,7 @@
   height: 600px;
   padding: 0;
   margin: 0;
-  background: linear-gradient(rgba(9, 25, 54, 0.8), rgba(9, 25, 54, 0.8)), url("./Images/Background Img (Hero page).png");
+  background: linear-gradient(rgba(9, 25, 54, 0.8), rgba(9, 25, 54, 0.8)), url("/Images/Background Img (Hero page).png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -55,7 +55,7 @@
 #heropage nav .container .navbar-brand .box {
   width: 50%;
   height: 50px;
-  background-image: url("./Images/Logo.png");
+  background-image: url("/Images/Logo.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -419,7 +419,7 @@
 #second .container .countriescontainer a .countrybox1 .countryimage {
   width: 100%;
   height: 300px;
-  background-image: url("./images/Paris Img.png");
+  background-image: url("/images/Paris Img.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -454,7 +454,7 @@
 #second .container .countriescontainer a .countrybox1 .review .star {
   width: 15px;
   height: 15px;
-  background-image: url("./icons/Star Icon.png");
+  background-image: url("/icons/Star Icon.png");
   background-position: center;
   background-repeat: none;
   background-size: cover;
@@ -489,7 +489,7 @@
 #second .container .countriescontainer a .countrybox2 .countryimage {
   width: 100%;
   height: 300px;
-  background-image: url("./images/Greece Img.png");
+  background-image: url("/images/Greece Img.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -524,7 +524,7 @@
 #second .container .countriescontainer a .countrybox2 .review .star {
   width: 15px;
   height: 15px;
-  background-image: url("./icons/Star Icon.png");
+  background-image: url("/icons/Star Icon.png");
   background-position: center;
   background-repeat: none;
   background-size: cover;
@@ -559,7 +559,7 @@
 #second .container .countriescontainer a .countrybox3 .countryimage {
   width: 100%;
   height: 300px;
-  background-image: url("./images/Ionian island Img (New).png");
+  background-image: url("/images/Ionian island Img (New).png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -594,7 +594,7 @@
 #second .container .countriescontainer a .countrybox3 .review .star {
   width: 15px;
   height: 15px;
-  background-image: url("./icons/Star Icon.png");
+  background-image: url("/icons/Star Icon.png");
   background-position: center;
   background-repeat: none;
   background-size: cover;
@@ -644,7 +644,7 @@
 #second .container .countriescontainer1 a .countrybox1 .countryimage {
   width: 100%;
   height: 300px;
-  background-image: url("./images/Switzerland Img.png");
+  background-image: url("/images/Switzerland Img.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -666,7 +666,7 @@
 #second .container .countriescontainer1 a .countrybox1 .review .star {
   width: 15px;
   height: 15px;
-  background-image: url("./icons/Star Icon.png");
+  background-image: url("/icons/Star Icon.png");
   background-position: center;
   background-repeat: none;
   background-size: cover;
@@ -690,7 +690,7 @@
 #second .container .countriescontainer1 a .countrybox2 .countryimage {
   width: 100%;
   height: 300px;
-  background-image: url("./images/Carribean Isalnd 1 Img(New).png");
+  background-image: url("/images/Carribean Isalnd 1 Img(New).png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -714,7 +714,7 @@
 #second .container .countriescontainer1 a .countrybox2 .review .star {
   width: 15px;
   height: 15px;
-  background-image: url("./icons/Star Icon.png");
+  background-image: url("/icons/Star Icon.png");
   background-position: center;
   background-repeat: none;
   background-size: cover;
@@ -738,7 +738,7 @@
 #second .container .countriescontainer1 a .countrybox3 .countryimage {
   width: 100%;
   height: 300px;
-  background-image: url("./images/Dubai Img.png");
+  background-image: url("/images/Dubai Img.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -762,7 +762,7 @@
 #second .container .countriescontainer1 a .countrybox3 .review .star {
   width: 15px;
   height: 15px;
-  background-image: url("./icons/Star Icon.png");
+  background-image: url("/icons/Star Icon.png");
   background-position: center;
   background-repeat: none;
   background-size: cover;
@@ -866,37 +866,37 @@
   border-radius: 10px;
 }
 #third .container .sliderwrapper #img1 {
-  background-image: url("./images/Cribbean beach Img.png");
+  background-image: url("/images/Cribbean beach Img.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 #third .container .sliderwrapper #img2 {
-  background-image: url("./images/Greece 2 Img.png");
+  background-image: url("/images/Greece 2 Img.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 #third .container .sliderwrapper #img3 {
-  background-image: url("./images/Los angeles Img.png");
+  background-image: url("/images/Los angeles Img.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 #third .container .sliderwrapper #img4 {
-  background-image: url("./images/italy img.jpg");
+  background-image: url("/images/italy img.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 #third .container .sliderwrapper #img5 {
-  background-image: url("./images/Dubai night.jpg");
+  background-image: url("/images/Dubai night.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 #third .container .sliderwrapper #img6 {
-  background-image: url("./images/Rome.jpg");
+  background-image: url("/images/Rome.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -987,7 +987,7 @@
 .main_blog .bigblog .blog .img {
   width: 95%;
   height: 250px;
-  background-image: url("./images/Blog img.jpeg");
+  background-image: url("/images/Blog img.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1000,10 +1000,10 @@
   }
 }
 .main_blog .bigblog .blog #two {
-  background-image: url("./images/Blog Img 1.png");
+  background-image: url("/images/Blog Img 1.png");
 }
 .main_blog .bigblog .blog #three {
-  background-image: url("./images/Blog Img 2 (1).png");
+  background-image: url("/images/Blog Img 2 (1).png");
 }
 .main_blog .bigblog .blog h2 {
   font-size: 22px;

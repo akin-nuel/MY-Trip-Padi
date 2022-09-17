@@ -1,12 +1,15 @@
 @font-face {
-    font-family: NeueMontreal;
-    src: url(neue-font/NeueMontreal-Regular.otf);
+    font-family: neue Montreal;
+    src: url(download/font/neueMontreal-light.ttf);
 }
-html, body{
+
+*, body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'NeueMontreal';
+    font-family: 'Neue Montreal';
+    font-weight: 500;
+    font-style: normal;
     overflow-x: hidden;
 }
 /* ========== HEADER NAV STYLE ========= */
@@ -169,12 +172,11 @@ input{
 }
 .search{
     background-color: #fff;
-    width: 30rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 4fr;
-    position: absolute;
-    transform: translate(120%, 300%);
-    /* text-align: center; */
+    width:70%;
+    height: 40px;
+    /*display: grid;
+    grid-template-columns: 0.5fr 3fr 4fr;*/
+    position: inherit;
     gap: 1.0em;
     border-radius: 3px;
 }
@@ -187,7 +189,8 @@ input{
 }
 #search-input {
     margin: auto;
-    margin-right: 90rem;
+    
+    
 }
 #hotel input, #hotel button{
     border-radius: 4px;
@@ -210,7 +213,7 @@ input{
     font-size: 48px;
     color: #fff;
     font-weight: 700px;
-
+    text-align: center;
 }
 
 #hotel-text{
@@ -220,9 +223,9 @@ input{
 }
 
 .search-wrapper #hotel .search{
-    width: 400px;
+    width: 60%;
     height: 50px;
-    text-align: center;
+    
 }
 
 footer{

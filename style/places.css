@@ -111,7 +111,7 @@ input{
     justify-content: center;
     gap: 140px;
     align-items: center;
-    font-size: 24px;
+    
    
 }
 #name a{
@@ -351,14 +351,18 @@ footer{
     }
     .nav-branding img{
         margin-top: -0.2rem;
+        width:60px;
+        height:60px;
+        object-fit: contain;
     }
     /* ************ END HEADER NAV ******************* */
     #name{
+        width: 60%;
         gap: 30px;
         justify-content: space-between;
     }
     .name{
-        font-size: 24px;
+        font-size: 12px;
         margin-left: 2px;
         gap: 0.2rem;
     }
